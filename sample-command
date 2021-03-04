@@ -1,1 +1,2 @@
- sudo docker run --name radhi -it -v /home/azureuser/radhi_selenium_foodibee_API:/usr/src/radimvn -w /usr/src/radimvn maven mvn test -DSuiteFileName="testng.xml"
+ # sudo docker run --name radhi -it -v /home/azureuser/radhi_selenium_foodibee_API:/usr/src/radimvn -w /usr/src/radimvn maven mvn test -DSuiteFileName="testng.xml"
+# /home/azureuser/radhi_selenium_foodibee_API/test-output/emailable-report.html file have test results or generate excel file. we send mail and make trigeers to deploy to production based on these results
