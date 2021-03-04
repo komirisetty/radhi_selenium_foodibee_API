@@ -1,0 +1,1 @@
+ sudo docker run --name radhi -it -v /home/azureuser/radhi_selenium_foodibee_API:/usr/src/radimvn -w /usr/src/radimvn maven mvn test -DSuiteFileName="testng.xml"
