@@ -1,0 +1,789 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="152" passed="152">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="196314" started-at="2021-03-04T12:40:39 IST" finished-at="2021-03-04T12:43:55 IST">
+    <groups>
+    </groups>
+    <test name="Consumer" duration-ms="52895" started-at="2021-03-04T12:40:39 IST" finished-at="2021-03-04T12:41:32 IST">
+      <class name="com.java.foodybiee.consumer.Consumer_All_TestCases">
+        <test-method status="PASS" signature="SetupDriver()[pri:0, instance:com.java.foodybiee.consumer.Consumer_All_TestCases@2173f6d9]" name="SetupDriver" is-config="true" duration-ms="10" started-at="2021-03-04T12:40:39 IST" finished-at="2021-03-04T12:40:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupDriver -->
+        <test-method status="PASS" signature="AddDeliveryAddress()[pri:1, instance:com.java.foodybiee.consumer.Consumer_All_TestCases@2173f6d9]" name="AddDeliveryAddress" duration-ms="4217" started-at="2021-03-04T12:40:39 IST" finished-at="2021-03-04T12:40:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddDeliveryAddress -->
+        <test-method status="PASS" signature="GetAvailableAddress()[pri:2, instance:com.java.foodybiee.consumer.Consumer_All_TestCases@2173f6d9]" name="GetAvailableAddress" duration-ms="1299" started-at="2021-03-04T12:40:43 IST" depends-on-methods="com.java.foodybiee.consumer.Consumer_All_TestCases.AddDeliveryAddress" finished-at="2021-03-04T12:40:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAvailableAddress -->
+        <test-method status="PASS" signature="UpdateAvailableAddress()[pri:3, instance:com.java.foodybiee.consumer.Consumer_All_TestCases@2173f6d9]" name="UpdateAvailableAddress" duration-ms="1257" started-at="2021-03-04T12:40:44 IST" depends-on-methods="com.java.foodybiee.consumer.Consumer_All_TestCases.GetAvailableAddress" finished-at="2021-03-04T12:40:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateAvailableAddress -->
+        <test-method status="PASS" signature="GetUpdateAvailableAddress()[pri:4, instance:com.java.foodybiee.consumer.Consumer_All_TestCases@2173f6d9]" name="GetUpdateAvailableAddress" duration-ms="1228" started-at="2021-03-04T12:40:46 IST" depends-on-methods="com.java.foodybiee.consumer.Consumer_All_TestCases.UpdateAvailableAddress" finished-at="2021-03-04T12:40:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUpdateAvailableAddress -->
+        <test-method status="PASS" signature="DeleteDeliveryAddress()[pri:5, instance:com.java.foodybiee.consumer.Consumer_All_TestCases@2173f6d9]" name="DeleteDeliveryAddress" duration-ms="1262" started-at="2021-03-04T12:40:47 IST" depends-on-methods="com.java.foodybiee.consumer.Consumer_All_TestCases.GetUpdateAvailableAddress" finished-at="2021-03-04T12:40:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteDeliveryAddress -->
+        <test-method status="PASS" signature="GetDeletedAvailableAddress()[pri:6, instance:com.java.foodybiee.consumer.Consumer_All_TestCases@2173f6d9]" name="GetDeletedAvailableAddress" duration-ms="1243" started-at="2021-03-04T12:40:48 IST" depends-on-methods="com.java.foodybiee.consumer.Consumer_All_TestCases.DeleteDeliveryAddress" finished-at="2021-03-04T12:40:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetDeletedAvailableAddress -->
+        <test-method status="PASS" signature="OrderHistory()[pri:7, instance:com.java.foodybiee.consumer.Consumer_All_TestCases@2173f6d9]" name="OrderHistory" duration-ms="1281" started-at="2021-03-04T12:40:49 IST" depends-on-methods="com.java.foodybiee.consumer.Consumer_All_TestCases.GetDeletedAvailableAddress" finished-at="2021-03-04T12:40:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderHistory -->
+        <test-method status="PASS" signature="GetOrders()[pri:8, instance:com.java.foodybiee.consumer.Consumer_All_TestCases@2173f6d9]" name="GetOrders" duration-ms="1616" started-at="2021-03-04T12:40:51 IST" depends-on-methods="com.java.foodybiee.consumer.Consumer_All_TestCases.OrderHistory" finished-at="2021-03-04T12:40:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetOrders -->
+        <test-method status="PASS" signature="GetOrderConfirmAndPay()[pri:9, instance:com.java.foodybiee.consumer.Consumer_All_TestCases@2173f6d9]" name="GetOrderConfirmAndPay" duration-ms="1225" started-at="2021-03-04T12:40:52 IST" depends-on-methods="com.java.foodybiee.consumer.Consumer_All_TestCases.GetOrders" finished-at="2021-03-04T12:40:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetOrderConfirmAndPay -->
+        <test-method status="PASS" signature="GetOrderNo()[pri:10, instance:com.java.foodybiee.consumer.Consumer_All_TestCases@2173f6d9]" name="GetOrderNo" duration-ms="1246" started-at="2021-03-04T12:40:54 IST" depends-on-methods="com.java.foodybiee.consumer.Consumer_All_TestCases.GetOrderConfirmAndPay" finished-at="2021-03-04T12:40:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetOrderNo -->
+        <test-method status="PASS" signature="GetDeliveryCharges()[pri:11, instance:com.java.foodybiee.consumer.Consumer_All_TestCases@2173f6d9]" name="GetDeliveryCharges" duration-ms="1318" started-at="2021-03-04T12:40:55 IST" depends-on-methods="com.java.foodybiee.consumer.Consumer_All_TestCases.GetOrderNo" finished-at="2021-03-04T12:40:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetDeliveryCharges -->
+        <test-method status="PASS" signature="GetNotificationCount()[pri:12, instance:com.java.foodybiee.consumer.Consumer_All_TestCases@2173f6d9]" name="GetNotificationCount" duration-ms="1209" started-at="2021-03-04T12:40:56 IST" depends-on-methods="com.java.foodybiee.consumer.Consumer_All_TestCases.GetDeliveryCharges" finished-at="2021-03-04T12:40:57 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetNotificationCount -->
+      </class> <!-- com.java.foodybiee.consumer.Consumer_All_TestCases -->
+      <class name="com.java.foodybiee.consumer.Consumer_All_Negative_TestCases">
+        <test-method status="PASS" signature="SetupDriver()[pri:0, instance:com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c]" name="SetupDriver" is-config="true" duration-ms="1" started-at="2021-03-04T12:40:57 IST" finished-at="2021-03-04T12:40:57 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupDriver -->
+        <test-method status="PASS" signature="AddDeliveryAddressUnauthorized()[pri:1, instance:com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c]" name="AddDeliveryAddressUnauthorized" duration-ms="1192" started-at="2021-03-04T12:40:57 IST" finished-at="2021-03-04T12:40:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddDeliveryAddressUnauthorized -->
+        <test-method status="PASS" signature="AddDeliveryAddressBadRequest()[pri:2, instance:com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c]" name="AddDeliveryAddressBadRequest" duration-ms="1188" started-at="2021-03-04T12:40:58 IST" finished-at="2021-03-04T12:41:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddDeliveryAddressBadRequest -->
+        <test-method status="PASS" signature="GetAvailableAddressNotFound()[pri:3, instance:com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c]" name="GetAvailableAddressNotFound" duration-ms="1221" started-at="2021-03-04T12:41:00 IST" finished-at="2021-03-04T12:41:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAvailableAddressNotFound -->
+        <test-method status="PASS" signature="GetAvailableAddressBadRequest()[pri:4, instance:com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c]" name="GetAvailableAddressBadRequest" duration-ms="1233" started-at="2021-03-04T12:41:01 IST" finished-at="2021-03-04T12:41:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAvailableAddressBadRequest -->
+        <test-method status="PASS" signature="GetAvailableAddressUnauthorized()[pri:5, instance:com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c]" name="GetAvailableAddressUnauthorized" duration-ms="1175" started-at="2021-03-04T12:41:02 IST" finished-at="2021-03-04T12:41:03 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAvailableAddressUnauthorized -->
+        <test-method status="PASS" signature="UpdateAvailableAddressUnauthorized()[pri:6, instance:com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c]" name="UpdateAvailableAddressUnauthorized" duration-ms="1211" started-at="2021-03-04T12:41:03 IST" finished-at="2021-03-04T12:41:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateAvailableAddressUnauthorized -->
+        <test-method status="PASS" signature="UpdateAvailableAddressNotFound()[pri:7, instance:com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c]" name="UpdateAvailableAddressNotFound" duration-ms="1233" started-at="2021-03-04T12:41:05 IST" finished-at="2021-03-04T12:41:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateAvailableAddressNotFound -->
+        <test-method status="PASS" signature="UpdateAvailableAddressBadRequest()[pri:8, instance:com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c]" name="UpdateAvailableAddressBadRequest" duration-ms="1191" started-at="2021-03-04T12:41:06 IST" finished-at="2021-03-04T12:41:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateAvailableAddressBadRequest -->
+        <test-method status="PASS" signature="DeleteDeliveryAddressUnauthorized()[pri:9, instance:com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c]" name="DeleteDeliveryAddressUnauthorized" duration-ms="1214" started-at="2021-03-04T12:41:07 IST" finished-at="2021-03-04T12:41:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteDeliveryAddressUnauthorized -->
+        <test-method status="PASS" signature="DeleteDeliveryAddressNotFound()[pri:10, instance:com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c]" name="DeleteDeliveryAddressNotFound" duration-ms="1236" started-at="2021-03-04T12:41:08 IST" finished-at="2021-03-04T12:41:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteDeliveryAddressNotFound -->
+        <test-method status="PASS" signature="OrderHistoryUnauthorized()[pri:11, instance:com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c]" name="OrderHistoryUnauthorized" duration-ms="1455" started-at="2021-03-04T12:41:09 IST" finished-at="2021-03-04T12:41:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderHistoryUnauthorized -->
+        <test-method status="PASS" signature="OrderHistoryBadRequest()[pri:12, instance:com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c]" name="OrderHistoryBadRequest" duration-ms="2375" started-at="2021-03-04T12:41:11 IST" finished-at="2021-03-04T12:41:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderHistoryBadRequest -->
+        <test-method status="PASS" signature="GetOrdersNotFound()[pri:13, instance:com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c]" name="GetOrdersNotFound" duration-ms="1205" started-at="2021-03-04T12:41:13 IST" finished-at="2021-03-04T12:41:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetOrdersNotFound -->
+        <test-method status="PASS" signature="GetOrdersBadRequest()[pri:14, instance:com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c]" name="GetOrdersBadRequest" duration-ms="1191" started-at="2021-03-04T12:41:14 IST" finished-at="2021-03-04T12:41:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetOrdersBadRequest -->
+        <test-method status="PASS" signature="GetOrdersUnauthorized()[pri:15, instance:com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c]" name="GetOrdersUnauthorized" duration-ms="1405" started-at="2021-03-04T12:41:16 IST" finished-at="2021-03-04T12:41:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetOrdersUnauthorized -->
+        <test-method status="PASS" signature="GetOrderConfirmAndPayNotFound()[pri:16, instance:com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c]" name="GetOrderConfirmAndPayNotFound" duration-ms="1226" started-at="2021-03-04T12:41:17 IST" finished-at="2021-03-04T12:41:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetOrderConfirmAndPayNotFound -->
+        <test-method status="PASS" signature="GetOrderConfirmAndPayBadRequest()[pri:17, instance:com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c]" name="GetOrderConfirmAndPayBadRequest" duration-ms="1182" started-at="2021-03-04T12:41:18 IST" finished-at="2021-03-04T12:41:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetOrderConfirmAndPayBadRequest -->
+        <test-method status="PASS" signature="GetOrderConfirmAndPayUnauthorized()[pri:18, instance:com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c]" name="GetOrderConfirmAndPayUnauthorized" duration-ms="1226" started-at="2021-03-04T12:41:20 IST" finished-at="2021-03-04T12:41:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetOrderConfirmAndPayUnauthorized -->
+        <test-method status="PASS" signature="GetOrderNoNotFound()[pri:19, instance:com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c]" name="GetOrderNoNotFound" duration-ms="1183" started-at="2021-03-04T12:41:21 IST" finished-at="2021-03-04T12:41:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetOrderNoNotFound -->
+        <test-method status="PASS" signature="GetOrderNoBadRequest()[pri:20, instance:com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c]" name="GetOrderNoBadRequest" duration-ms="1183" started-at="2021-03-04T12:41:22 IST" finished-at="2021-03-04T12:41:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetOrderNoBadRequest -->
+        <test-method status="PASS" signature="GetOrderNoUnauthorized()[pri:21, instance:com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c]" name="GetOrderNoUnauthorized" duration-ms="1204" started-at="2021-03-04T12:41:23 IST" finished-at="2021-03-04T12:41:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetOrderNoUnauthorized -->
+        <test-method status="PASS" signature="GetDeliveryChargesNotFound()[pri:22, instance:com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c]" name="GetDeliveryChargesNotFound" duration-ms="1220" started-at="2021-03-04T12:41:24 IST" finished-at="2021-03-04T12:41:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetDeliveryChargesNotFound -->
+        <test-method status="PASS" signature="GetDeliveryChargesBadRequest()[pri:23, instance:com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c]" name="GetDeliveryChargesBadRequest" duration-ms="1240" started-at="2021-03-04T12:41:26 IST" finished-at="2021-03-04T12:41:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetDeliveryChargesBadRequest -->
+        <test-method status="PASS" signature="GetDeliveryChargesUnauthorized()[pri:24, instance:com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c]" name="GetDeliveryChargesUnauthorized" duration-ms="1181" started-at="2021-03-04T12:41:27 IST" finished-at="2021-03-04T12:41:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetDeliveryChargesUnauthorized -->
+        <test-method status="PASS" signature="GetNotificationCountNotFound()[pri:25, instance:com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c]" name="GetNotificationCountNotFound" duration-ms="1186" started-at="2021-03-04T12:41:28 IST" finished-at="2021-03-04T12:41:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetNotificationCountNotFound -->
+        <test-method status="PASS" signature="GetNotificationCountBadRequest()[pri:26, instance:com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c]" name="GetNotificationCountBadRequest" duration-ms="1194" started-at="2021-03-04T12:41:29 IST" finished-at="2021-03-04T12:41:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetNotificationCountBadRequest -->
+        <test-method status="PASS" signature="GetNotificationCountUnauthorized()[pri:27, instance:com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c]" name="GetNotificationCountUnauthorized" duration-ms="1163" started-at="2021-03-04T12:41:30 IST" finished-at="2021-03-04T12:41:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetNotificationCountUnauthorized -->
+      </class> <!-- com.java.foodybiee.consumer.Consumer_All_Negative_TestCases -->
+    </test> <!-- Consumer -->
+    <test name="Country" duration-ms="12090" started-at="2021-03-04T12:41:32 IST" finished-at="2021-03-04T12:41:44 IST">
+      <class name="com.java.foodybiee.country.Country_Negative_Testcases">
+        <test-method status="PASS" signature="SetupDriver()[pri:0, instance:com.java.foodybiee.country.Country_Negative_Testcases@7b69c6ba]" name="SetupDriver" is-config="true" duration-ms="0" started-at="2021-03-04T12:41:35 IST" finished-at="2021-03-04T12:41:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupDriver -->
+        <test-method status="PASS" signature="GetCountryUnauthorized()[pri:1, instance:com.java.foodybiee.country.Country_Negative_Testcases@7b69c6ba]" name="GetCountryUnauthorized" duration-ms="1184" started-at="2021-03-04T12:41:35 IST" finished-at="2021-03-04T12:41:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetCountryUnauthorized -->
+        <test-method status="PASS" signature="GetStatesUnauthorized()[pri:2, instance:com.java.foodybiee.country.Country_Negative_Testcases@7b69c6ba]" name="GetStatesUnauthorized" duration-ms="1219" started-at="2021-03-04T12:41:36 IST" finished-at="2021-03-04T12:41:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetStatesUnauthorized -->
+        <test-method status="PASS" signature="GetStatesNotFound()[pri:3, instance:com.java.foodybiee.country.Country_Negative_Testcases@7b69c6ba]" name="GetStatesNotFound" duration-ms="1183" started-at="2021-03-04T12:41:38 IST" finished-at="2021-03-04T12:41:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetStatesNotFound -->
+        <test-method status="PASS" signature="GetStatesBadRequest()[pri:4, instance:com.java.foodybiee.country.Country_Negative_Testcases@7b69c6ba]" name="GetStatesBadRequest" duration-ms="1196" started-at="2021-03-04T12:41:39 IST" finished-at="2021-03-04T12:41:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetStatesBadRequest -->
+        <test-method status="PASS" signature="GetCityByStateUnauthorized()[pri:5, instance:com.java.foodybiee.country.Country_Negative_Testcases@7b69c6ba]" name="GetCityByStateUnauthorized" duration-ms="1199" started-at="2021-03-04T12:41:40 IST" finished-at="2021-03-04T12:41:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetCityByStateUnauthorized -->
+        <test-method status="PASS" signature="GetCityByStateNotFound()[pri:6, instance:com.java.foodybiee.country.Country_Negative_Testcases@7b69c6ba]" name="GetCityByStateNotFound" duration-ms="1308" started-at="2021-03-04T12:41:41 IST" finished-at="2021-03-04T12:41:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetCityByStateNotFound -->
+        <test-method status="PASS" signature="GetCityByStateBadRequest()[pri:7, instance:com.java.foodybiee.country.Country_Negative_Testcases@7b69c6ba]" name="GetCityByStateBadRequest" duration-ms="1186" started-at="2021-03-04T12:41:43 IST" finished-at="2021-03-04T12:41:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetCityByStateBadRequest -->
+      </class> <!-- com.java.foodybiee.country.Country_Negative_Testcases -->
+      <class name="com.java.foodybiee.country.Country_All_Testcases">
+        <test-method status="PASS" signature="SetupDriver()[pri:0, instance:com.java.foodybiee.country.Country_All_Testcases@44c8afef]" name="SetupDriver" is-config="true" duration-ms="1" started-at="2021-03-04T12:41:32 IST" finished-at="2021-03-04T12:41:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupDriver -->
+        <test-method status="PASS" signature="GetCountry()[pri:1, instance:com.java.foodybiee.country.Country_All_Testcases@44c8afef]" name="GetCountry" duration-ms="1184" started-at="2021-03-04T12:41:32 IST" finished-at="2021-03-04T12:41:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetCountry -->
+        <test-method status="PASS" signature="GetCityByState()[pri:2, instance:com.java.foodybiee.country.Country_All_Testcases@44c8afef]" name="GetCityByState" duration-ms="1205" started-at="2021-03-04T12:41:33 IST" finished-at="2021-03-04T12:41:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetCityByState -->
+        <test-method status="PASS" signature="GetStates()[pri:2, instance:com.java.foodybiee.country.Country_All_Testcases@44c8afef]" name="GetStates" duration-ms="1183" started-at="2021-03-04T12:41:34 IST" finished-at="2021-03-04T12:41:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetStates -->
+      </class> <!-- com.java.foodybiee.country.Country_All_Testcases -->
+    </test> <!-- Country -->
+    <test name="Dashboard" duration-ms="9567" started-at="2021-03-04T12:41:44 IST" finished-at="2021-03-04T12:41:53 IST">
+      <class name="com.java.foodybiee.dashboard.Dashboard_All_TestCase">
+        <test-method status="PASS" signature="SetupDriver()[pri:0, instance:com.java.foodybiee.dashboard.Dashboard_All_TestCase@1e7c7811]" name="SetupDriver" is-config="true" duration-ms="1" started-at="2021-03-04T12:41:44 IST" finished-at="2021-03-04T12:41:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupDriver -->
+        <test-method status="PASS" signature="GetDashboardList()[pri:1, instance:com.java.foodybiee.dashboard.Dashboard_All_TestCase@1e7c7811]" name="GetDashboardList" duration-ms="1211" started-at="2021-03-04T12:41:44 IST" finished-at="2021-03-04T12:41:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetDashboardList -->
+        <test-method status="PASS" signature="GetDashboarMobileSearch()[pri:2, instance:com.java.foodybiee.dashboard.Dashboard_All_TestCase@1e7c7811]" name="GetDashboarMobileSearch" duration-ms="1186" started-at="2021-03-04T12:41:45 IST" finished-at="2021-03-04T12:41:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetDashboarMobileSearch -->
+        <test-method status="PASS" signature="GetDashboarGlobalSearchChef()[pri:3, instance:com.java.foodybiee.dashboard.Dashboard_All_TestCase@1e7c7811]" name="GetDashboarGlobalSearchChef" duration-ms="1186" started-at="2021-03-04T12:41:46 IST" finished-at="2021-03-04T12:41:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetDashboarGlobalSearchChef -->
+        <test-method status="PASS" signature="GetDashboarSearchChefMobile()[pri:4, instance:com.java.foodybiee.dashboard.Dashboard_All_TestCase@1e7c7811]" name="GetDashboarSearchChefMobile" duration-ms="1193" started-at="2021-03-04T12:41:47 IST" finished-at="2021-03-04T12:41:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetDashboarSearchChefMobile -->
+      </class> <!-- com.java.foodybiee.dashboard.Dashboard_All_TestCase -->
+      <class name="com.java.foodybiee.dashboard.Dashboard_All_Negative_TestCases">
+        <test-method status="PASS" signature="SetupDriver()[pri:0, instance:com.java.foodybiee.dashboard.Dashboard_All_Negative_TestCases@77ec78b9]" name="SetupDriver" is-config="true" duration-ms="1" started-at="2021-03-04T12:41:49 IST" finished-at="2021-03-04T12:41:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupDriver -->
+        <test-method status="PASS" signature="GetDashboardListUnauthorized()[pri:1, instance:com.java.foodybiee.dashboard.Dashboard_All_Negative_TestCases@77ec78b9]" name="GetDashboardListUnauthorized" duration-ms="1198" started-at="2021-03-04T12:41:49 IST" finished-at="2021-03-04T12:41:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetDashboardListUnauthorized -->
+        <test-method status="PASS" signature="GetDashboarMobileSearchUnauthorized()[pri:2, instance:com.java.foodybiee.dashboard.Dashboard_All_Negative_TestCases@77ec78b9]" name="GetDashboarMobileSearchUnauthorized" duration-ms="1167" started-at="2021-03-04T12:41:50 IST" finished-at="2021-03-04T12:41:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetDashboarMobileSearchUnauthorized -->
+        <test-method status="PASS" signature="GetDashboarGlobalSearchChefUnauthorized()[pri:3, instance:com.java.foodybiee.dashboard.Dashboard_All_Negative_TestCases@77ec78b9]" name="GetDashboarGlobalSearchChefUnauthorized" duration-ms="1193" started-at="2021-03-04T12:41:51 IST" finished-at="2021-03-04T12:41:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetDashboarGlobalSearchChefUnauthorized -->
+        <test-method status="PASS" signature="GetDashboarSearchChefMobileUnauthorized()[pri:4, instance:com.java.foodybiee.dashboard.Dashboard_All_Negative_TestCases@77ec78b9]" name="GetDashboarSearchChefMobileUnauthorized" duration-ms="1205" started-at="2021-03-04T12:41:52 IST" finished-at="2021-03-04T12:41:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetDashboarSearchChefMobileUnauthorized -->
+      </class> <!-- com.java.foodybiee.dashboard.Dashboard_All_Negative_TestCases -->
+    </test> <!-- Dashboard -->
+    <test name="AddToCart" duration-ms="16800" started-at="2021-03-04T12:41:54 IST" finished-at="2021-03-04T12:42:10 IST">
+      <class name="com.java.foodybiee.addtocart.AddToCart_All_TestCases">
+        <test-method status="PASS" signature="SetupDriver()[pri:0, instance:com.java.foodybiee.addtocart.AddToCart_All_TestCases@87f383f]" name="SetupDriver" is-config="true" duration-ms="1" started-at="2021-03-04T12:41:54 IST" finished-at="2021-03-04T12:41:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupDriver -->
+        <test-method status="PASS" signature="AddToCart()[pri:1, instance:com.java.foodybiee.addtocart.AddToCart_All_TestCases@87f383f]" name="AddToCart" duration-ms="1247" started-at="2021-03-04T12:41:54 IST" finished-at="2021-03-04T12:41:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddToCart -->
+        <test-method status="PASS" signature="GetAddedItemInCartList()[pri:2, instance:com.java.foodybiee.addtocart.AddToCart_All_TestCases@87f383f]" name="GetAddedItemInCartList" duration-ms="1241" started-at="2021-03-04T12:41:55 IST" depends-on-methods="com.java.foodybiee.addtocart.AddToCart_All_TestCases.AddToCart" finished-at="2021-03-04T12:41:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAddedItemInCartList -->
+        <test-method status="PASS" signature="UpdateCart()[pri:3, instance:com.java.foodybiee.addtocart.AddToCart_All_TestCases@87f383f]" name="UpdateCart" duration-ms="1188" started-at="2021-03-04T12:41:56 IST" depends-on-methods="com.java.foodybiee.addtocart.AddToCart_All_TestCases.GetAddedItemInCartList" finished-at="2021-03-04T12:41:57 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateCart -->
+        <test-method status="PASS" signature="GetUpdatedCartList()[pri:4, instance:com.java.foodybiee.addtocart.AddToCart_All_TestCases@87f383f]" name="GetUpdatedCartList" duration-ms="1191" started-at="2021-03-04T12:41:57 IST" depends-on-methods="com.java.foodybiee.addtocart.AddToCart_All_TestCases.UpdateCart" finished-at="2021-03-04T12:41:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUpdatedCartList -->
+        <test-method status="PASS" signature="DeleteAllItemFromCart()[pri:5, instance:com.java.foodybiee.addtocart.AddToCart_All_TestCases@87f383f]" name="DeleteAllItemFromCart" duration-ms="1200" started-at="2021-03-04T12:41:58 IST" depends-on-methods="com.java.foodybiee.addtocart.AddToCart_All_TestCases.GetUpdatedCartList" finished-at="2021-03-04T12:42:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteAllItemFromCart -->
+        <test-method status="PASS" signature="GetCartList()[pri:6, instance:com.java.foodybiee.addtocart.AddToCart_All_TestCases@87f383f]" name="GetCartList" duration-ms="1194" started-at="2021-03-04T12:42:00 IST" depends-on-methods="com.java.foodybiee.addtocart.AddToCart_All_TestCases.DeleteAllItemFromCart" finished-at="2021-03-04T12:42:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetCartList -->
+      </class> <!-- com.java.foodybiee.addtocart.AddToCart_All_TestCases -->
+      <class name="com.java.foodybiee.addtocart.AddToCart_Negative_TestCases">
+        <test-method status="PASS" signature="SetupDriver()[pri:0, instance:com.java.foodybiee.addtocart.AddToCart_Negative_TestCases@4eb7f003]" name="SetupDriver" is-config="true" duration-ms="1" started-at="2021-03-04T12:42:01 IST" finished-at="2021-03-04T12:42:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupDriver -->
+        <test-method status="PASS" signature="AddToCartUnauthorized()[pri:1, instance:com.java.foodybiee.addtocart.AddToCart_Negative_TestCases@4eb7f003]" name="AddToCartUnauthorized" duration-ms="1161" started-at="2021-03-04T12:42:01 IST" finished-at="2021-03-04T12:42:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddToCartUnauthorized -->
+        <test-method status="PASS" signature="AddToCartBadRequest()[pri:2, instance:com.java.foodybiee.addtocart.AddToCart_Negative_TestCases@4eb7f003]" name="AddToCartBadRequest" duration-ms="1222" started-at="2021-03-04T12:42:02 IST" finished-at="2021-03-04T12:42:03 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddToCartBadRequest -->
+        <test-method status="PASS" signature="GetAddedItemInCartListUnauthorizeds()[pri:3, instance:com.java.foodybiee.addtocart.AddToCart_Negative_TestCases@4eb7f003]" name="GetAddedItemInCartListUnauthorizeds" duration-ms="1172" started-at="2021-03-04T12:42:03 IST" finished-at="2021-03-04T12:42:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAddedItemInCartListUnauthorizeds -->
+        <test-method status="PASS" signature="GetAddedItemInCartListBadRequest()[pri:4, instance:com.java.foodybiee.addtocart.AddToCart_Negative_TestCases@4eb7f003]" name="GetAddedItemInCartListBadRequest" duration-ms="1207" started-at="2021-03-04T12:42:04 IST" finished-at="2021-03-04T12:42:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAddedItemInCartListBadRequest -->
+        <test-method status="PASS" signature="GetAddedItemInCartListNotFound()[pri:5, instance:com.java.foodybiee.addtocart.AddToCart_Negative_TestCases@4eb7f003]" name="GetAddedItemInCartListNotFound" duration-ms="1191" started-at="2021-03-04T12:42:06 IST" finished-at="2021-03-04T12:42:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAddedItemInCartListNotFound -->
+        <test-method status="PASS" signature="UpdateCartUnauthorized()[pri:6, instance:com.java.foodybiee.addtocart.AddToCart_Negative_TestCases@4eb7f003]" name="UpdateCartUnauthorized" duration-ms="1180" started-at="2021-03-04T12:42:07 IST" finished-at="2021-03-04T12:42:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateCartUnauthorized -->
+        <test-method status="PASS" signature="UpdateCartBadRequest()[pri:7, instance:com.java.foodybiee.addtocart.AddToCart_Negative_TestCases@4eb7f003]" name="UpdateCartBadRequest" duration-ms="1189" started-at="2021-03-04T12:42:08 IST" finished-at="2021-03-04T12:42:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateCartBadRequest -->
+        <test-method status="PASS" signature="DeleteAllItemFromCartUnauthorized()[pri:8, instance:com.java.foodybiee.addtocart.AddToCart_Negative_TestCases@4eb7f003]" name="DeleteAllItemFromCartUnauthorized" duration-ms="1173" started-at="2021-03-04T12:42:09 IST" finished-at="2021-03-04T12:42:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteAllItemFromCartUnauthorized -->
+      </class> <!-- com.java.foodybiee.addtocart.AddToCart_Negative_TestCases -->
+    </test> <!-- AddToCart -->
+    <test name="franchise" duration-ms="10952" started-at="2021-03-04T12:42:10 IST" finished-at="2021-03-04T12:42:21 IST">
+      <class name="com.java.foodybiee.franchisee.FranchiseMapping">
+        <test-method status="PASS" signature="SetupDriver()[pri:0, instance:com.java.foodybiee.franchisee.FranchiseMapping@8646db9]" name="SetupDriver" is-config="true" duration-ms="1" started-at="2021-03-04T12:42:20 IST" finished-at="2021-03-04T12:42:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupDriver -->
+        <test-method status="PASS" signature="GetFranchiseesMapped()[pri:1, instance:com.java.foodybiee.franchisee.FranchiseMapping@8646db9]" name="GetFranchiseesMapped" duration-ms="1211" started-at="2021-03-04T12:42:20 IST" finished-at="2021-03-04T12:42:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetFranchiseesMapped -->
+      </class> <!-- com.java.foodybiee.franchisee.FranchiseMapping -->
+      <class name="com.java.foodybiee.franchisee.Franchisee_All_TestCases">
+        <test-method status="PASS" signature="SetupDriver()[pri:0, instance:com.java.foodybiee.franchisee.Franchisee_All_TestCases@66d1af89]" name="SetupDriver" is-config="true" duration-ms="1" started-at="2021-03-04T12:42:13 IST" finished-at="2021-03-04T12:42:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupDriver -->
+        <test-method status="PASS" signature="GetFranchiseById()[pri:1, instance:com.java.foodybiee.franchisee.Franchisee_All_TestCases@66d1af89]" name="GetFranchiseById" duration-ms="1197" started-at="2021-03-04T12:42:13 IST" finished-at="2021-03-04T12:42:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetFranchiseById -->
+        <test-method status="PASS" signature="GetPricingModel()[pri:2, instance:com.java.foodybiee.franchisee.Franchisee_All_TestCases@66d1af89]" name="GetPricingModel" duration-ms="1261" started-at="2021-03-04T12:42:14 IST" finished-at="2021-03-04T12:42:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetPricingModel -->
+        <test-method status="PASS" signature="GetPricingModelById()[pri:3, instance:com.java.foodybiee.franchisee.Franchisee_All_TestCases@66d1af89]" name="GetPricingModelById" duration-ms="1179" started-at="2021-03-04T12:42:15 IST" finished-at="2021-03-04T12:42:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetPricingModelById -->
+        <test-method status="PASS" signature="GetTopProspectFranchiseList()[pri:4, instance:com.java.foodybiee.franchisee.Franchisee_All_TestCases@66d1af89]" name="GetTopProspectFranchiseList" duration-ms="1195" started-at="2021-03-04T12:42:17 IST" finished-at="2021-03-04T12:42:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetTopProspectFranchiseList -->
+        <test-method status="PASS" signature="GetKnowMore()[pri:5, instance:com.java.foodybiee.franchisee.Franchisee_All_TestCases@66d1af89]" name="GetKnowMore" duration-ms="1167" started-at="2021-03-04T12:42:18 IST" finished-at="2021-03-04T12:42:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetKnowMore -->
+        <test-method status="PASS" signature="GetFranchiseByEmail()[pri:6, instance:com.java.foodybiee.franchisee.Franchisee_All_TestCases@66d1af89]" name="GetFranchiseByEmail" duration-ms="1188" started-at="2021-03-04T12:42:19 IST" finished-at="2021-03-04T12:42:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetFranchiseByEmail -->
+      </class> <!-- com.java.foodybiee.franchisee.Franchisee_All_TestCases -->
+      <class name="com.java.foodybiee.franchisee.FranchiseDetails">
+        <test-method status="PASS" signature="SetupDriver()[pri:0, instance:com.java.foodybiee.franchisee.FranchiseDetails@4a87761d]" name="SetupDriver" is-config="true" duration-ms="1" started-at="2021-03-04T12:42:10 IST" finished-at="2021-03-04T12:42:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupDriver -->
+        <test-method status="PASS" signature="GetFranchiseDetailsById()[pri:1, instance:com.java.foodybiee.franchisee.FranchiseDetails@4a87761d]" name="GetFranchiseDetailsById" duration-ms="1195" started-at="2021-03-04T12:42:10 IST" finished-at="2021-03-04T12:42:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetFranchiseDetailsById -->
+        <test-method status="PASS" signature="GetAllFranchiseDetails()[pri:2, instance:com.java.foodybiee.franchisee.FranchiseDetails@4a87761d]" name="GetAllFranchiseDetails" duration-ms="1297" started-at="2021-03-04T12:42:12 IST" finished-at="2021-03-04T12:42:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAllFranchiseDetails -->
+      </class> <!-- com.java.foodybiee.franchisee.FranchiseDetails -->
+    </test> <!-- franchise -->
+    <test name="role" duration-ms="1179" started-at="2021-03-04T12:42:21 IST" finished-at="2021-03-04T12:42:23 IST">
+      <class name="com.java.foodybiee.role.Role_TestCases">
+        <test-method status="PASS" signature="SetupDriver()[pri:0, instance:com.java.foodybiee.role.Role_TestCases@7cbd213e]" name="SetupDriver" is-config="true" duration-ms="1" started-at="2021-03-04T12:42:21 IST" finished-at="2021-03-04T12:42:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupDriver -->
+        <test-method status="PASS" signature="GetRole()[pri:1, instance:com.java.foodybiee.role.Role_TestCases@7cbd213e]" name="GetRole" duration-ms="1172" started-at="2021-03-04T12:42:21 IST" finished-at="2021-03-04T12:42:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetRole -->
+      </class> <!-- com.java.foodybiee.role.Role_TestCases -->
+    </test> <!-- role -->
+    <test name="assets" duration-ms="1198" started-at="2021-03-04T12:42:23 IST" finished-at="2021-03-04T12:42:24 IST">
+      <class name="com.java.foodybiee.assets.Assets_TestCase">
+        <test-method status="PASS" signature="GetAllUIAssets()[pri:1, instance:com.java.foodybiee.assets.Assets_TestCase@7a30d1e6]" name="GetAllUIAssets" duration-ms="1194" started-at="2021-03-04T12:42:23 IST" finished-at="2021-03-04T12:42:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAllUIAssets -->
+      </class> <!-- com.java.foodybiee.assets.Assets_TestCase -->
+    </test> <!-- assets -->
+    <test name="leftmenu" duration-ms="3607" started-at="2021-03-04T12:42:24 IST" finished-at="2021-03-04T12:42:28 IST">
+      <class name="com.java.foodybiee.leftmenu.LeftMenu_All_TestCases">
+        <test-method status="PASS" signature="SetupDriver()[pri:0, instance:com.java.foodybiee.leftmenu.LeftMenu_All_TestCases@4e718207]" name="SetupDriver" is-config="true" duration-ms="2" started-at="2021-03-04T12:42:24 IST" finished-at="2021-03-04T12:42:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupDriver -->
+        <test-method status="PASS" signature="GetLeftMenu()[pri:1, instance:com.java.foodybiee.leftmenu.LeftMenu_All_TestCases@4e718207]" name="GetLeftMenu" duration-ms="1187" started-at="2021-03-04T12:42:24 IST" finished-at="2021-03-04T12:42:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetLeftMenu -->
+        <test-method status="PASS" signature="GetChefSideMenu()[pri:2, instance:com.java.foodybiee.leftmenu.LeftMenu_All_TestCases@4e718207]" name="GetChefSideMenu" duration-ms="1212" started-at="2021-03-04T12:42:25 IST" finished-at="2021-03-04T12:42:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetChefSideMenu -->
+        <test-method status="PASS" signature="GetConsumer()[pri:3, instance:com.java.foodybiee.leftmenu.LeftMenu_All_TestCases@4e718207]" name="GetConsumer" duration-ms="1194" started-at="2021-03-04T12:42:26 IST" finished-at="2021-03-04T12:42:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetConsumer -->
+      </class> <!-- com.java.foodybiee.leftmenu.LeftMenu_All_TestCases -->
+    </test> <!-- leftmenu -->
+    <test name="chef" duration-ms="8390" started-at="2021-03-04T12:42:28 IST" finished-at="2021-03-04T12:42:36 IST">
+      <class name="com.java.foodybiee.chef.Chef_All_Get_TestCases">
+        <test-method status="PASS" signature="GetChefForLocation()[pri:1, instance:com.java.foodybiee.chef.Chef_All_Get_TestCases@1fc2b765]" name="GetChefForLocation" duration-ms="1208" started-at="2021-03-04T12:42:28 IST" finished-at="2021-03-04T12:42:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetChefForLocation -->
+        <test-method status="PASS" signature="GetChefDetailsById()[pri:2, instance:com.java.foodybiee.chef.Chef_All_Get_TestCases@1fc2b765]" name="GetChefDetailsById" duration-ms="1183" started-at="2021-03-04T12:42:29 IST" finished-at="2021-03-04T12:42:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetChefDetailsById -->
+        <test-method status="PASS" signature="GetChefStatus()[pri:3, instance:com.java.foodybiee.chef.Chef_All_Get_TestCases@1fc2b765]" name="GetChefStatus" duration-ms="1182" started-at="2021-03-04T12:42:30 IST" finished-at="2021-03-04T12:42:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetChefStatus -->
+        <test-method status="PASS" signature="GetChefByFranchise()[pri:4, instance:com.java.foodybiee.chef.Chef_All_Get_TestCases@1fc2b765]" name="GetChefByFranchise" duration-ms="1202" started-at="2021-03-04T12:42:31 IST" finished-at="2021-03-04T12:42:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetChefByFranchise -->
+        <test-method status="PASS" signature="GetChefByEmail()[pri:5, instance:com.java.foodybiee.chef.Chef_All_Get_TestCases@1fc2b765]" name="GetChefByEmail" duration-ms="1203" started-at="2021-03-04T12:42:32 IST" finished-at="2021-03-04T12:42:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetChefByEmail -->
+        <test-method status="PASS" signature="GetChefCountList()[pri:6, instance:com.java.foodybiee.chef.Chef_All_Get_TestCases@1fc2b765]" name="GetChefCountList" duration-ms="1195" started-at="2021-03-04T12:42:34 IST" finished-at="2021-03-04T12:42:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetChefCountList -->
+        <test-method status="PASS" signature="GetReviewByChefId()[pri:7, instance:com.java.foodybiee.chef.Chef_All_Get_TestCases@1fc2b765]" name="GetReviewByChefId" duration-ms="1195" started-at="2021-03-04T12:42:35 IST" finished-at="2021-03-04T12:42:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetReviewByChefId -->
+      </class> <!-- com.java.foodybiee.chef.Chef_All_Get_TestCases -->
+    </test> <!-- chef -->
+    <test name="chefprofilemobile" duration-ms="8800" started-at="2021-03-04T12:42:36 IST" finished-at="2021-03-04T12:42:45 IST">
+      <class name="com.java.foodybiee.chefprofilemobile.ChefProfileMobile">
+        <test-method status="PASS" signature="SetupDriver()[pri:0, instance:com.java.foodybiee.chefprofilemobile.ChefProfileMobile@365185bd]" name="SetupDriver" is-config="true" duration-ms="1" started-at="2021-03-04T12:42:36 IST" finished-at="2021-03-04T12:42:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupDriver -->
+        <test-method status="PASS" signature="AddRatingsAndCommentForDish()[pri:1, instance:com.java.foodybiee.chefprofilemobile.ChefProfileMobile@365185bd]" name="AddRatingsAndCommentForDish" duration-ms="1247" started-at="2021-03-04T12:42:36 IST" finished-at="2021-03-04T12:42:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddRatingsAndCommentForDish -->
+        <test-method status="PASS" signature="GetChefProfileMobileList()[pri:2, instance:com.java.foodybiee.chefprofilemobile.ChefProfileMobile@365185bd]" name="GetChefProfileMobileList" duration-ms="1215" started-at="2021-03-04T12:42:37 IST" finished-at="2021-03-04T12:42:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetChefProfileMobileList -->
+        <test-method status="PASS" signature="GetDishRatingAverage()[pri:3, instance:com.java.foodybiee.chefprofilemobile.ChefProfileMobile@365185bd]" name="GetDishRatingAverage" duration-ms="1206" started-at="2021-03-04T12:42:39 IST" finished-at="2021-03-04T12:42:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetDishRatingAverage -->
+        <test-method status="PASS" signature="GetChefRatingsAndReviews()[pri:4, instance:com.java.foodybiee.chefprofilemobile.ChefProfileMobile@365185bd]" name="GetChefRatingsAndReviews" duration-ms="1194" started-at="2021-03-04T12:42:40 IST" finished-at="2021-03-04T12:42:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetChefRatingsAndReviews -->
+        <test-method status="PASS" signature="mongodb()[pri:5, instance:com.java.foodybiee.chefprofilemobile.ChefProfileMobile@365185bd]" name="mongodb" duration-ms="3919" started-at="2021-03-04T12:42:41 IST" finished-at="2021-03-04T12:42:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mongodb -->
+      </class> <!-- com.java.foodybiee.chefprofilemobile.ChefProfileMobile -->
+    </test> <!-- chefprofilemobile -->
+    <test name="havingrefferal" duration-ms="1274" started-at="2021-03-04T12:42:45 IST" finished-at="2021-03-04T12:42:46 IST">
+      <class name="com.java.foodybiee.havingrefferal.Refferal">
+        <test-method status="PASS" signature="SetupDriver()[pri:0, instance:com.java.foodybiee.havingrefferal.Refferal@6ec8211c]" name="SetupDriver" is-config="true" duration-ms="1" started-at="2021-03-04T12:42:45 IST" finished-at="2021-03-04T12:42:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupDriver -->
+        <test-method status="PASS" signature="GetHavingRefferalOrNot()[pri:1, instance:com.java.foodybiee.havingrefferal.Refferal@6ec8211c]" name="GetHavingRefferalOrNot" duration-ms="1268" started-at="2021-03-04T12:42:45 IST" finished-at="2021-03-04T12:42:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetHavingRefferalOrNot -->
+      </class> <!-- com.java.foodybiee.havingrefferal.Refferal -->
+    </test> <!-- havingrefferal -->
+    <test name="invoice" duration-ms="1945" started-at="2021-03-04T12:42:46 IST" finished-at="2021-03-04T12:42:48 IST">
+      <class name="com.java.foodybiee.invoice.Invoice">
+        <test-method status="PASS" signature="SetupDriver()[pri:0, instance:com.java.foodybiee.invoice.Invoice@1786f9d5]" name="SetupDriver" is-config="true" duration-ms="1" started-at="2021-03-04T12:42:46 IST" finished-at="2021-03-04T12:42:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupDriver -->
+        <test-method status="PASS" signature="GetInvoice()[pri:1, instance:com.java.foodybiee.invoice.Invoice@1786f9d5]" name="GetInvoice" duration-ms="1938" started-at="2021-03-04T12:42:46 IST" finished-at="2021-03-04T12:42:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetInvoice -->
+      </class> <!-- com.java.foodybiee.invoice.Invoice -->
+    </test> <!-- invoice -->
+    <test name="dish" duration-ms="10889" started-at="2021-03-04T12:42:48 IST" finished-at="2021-03-04T12:42:59 IST">
+      <class name="com.java.foodybiee.dish.Dish_All_Get_TestCases">
+        <test-method status="PASS" signature="SetupDriver()[pri:0, instance:com.java.foodybiee.dish.Dish_All_Get_TestCases@10a035a0]" name="SetupDriver" is-config="true" duration-ms="0" started-at="2021-03-04T12:42:48 IST" finished-at="2021-03-04T12:42:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupDriver -->
+        <test-method status="PASS" signature="GetChefMenu()[pri:1, instance:com.java.foodybiee.dish.Dish_All_Get_TestCases@10a035a0]" name="GetChefMenu" duration-ms="1195" started-at="2021-03-04T12:42:48 IST" finished-at="2021-03-04T12:42:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetChefMenu -->
+        <test-method status="PASS" signature="GetChefMenuForToday()[pri:2, instance:com.java.foodybiee.dish.Dish_All_Get_TestCases@10a035a0]" name="GetChefMenuForToday" duration-ms="1176" started-at="2021-03-04T12:42:49 IST" finished-at="2021-03-04T12:42:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetChefMenuForToday -->
+        <test-method status="PASS" signature="GetChefPopularMenu()[pri:3, instance:com.java.foodybiee.dish.Dish_All_Get_TestCases@10a035a0]" name="GetChefPopularMenu" duration-ms="1205" started-at="2021-03-04T12:42:51 IST" finished-at="2021-03-04T12:42:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetChefPopularMenu -->
+        <test-method status="PASS" signature="GetDishById()[pri:4, instance:com.java.foodybiee.dish.Dish_All_Get_TestCases@10a035a0]" name="GetDishById" duration-ms="1203" started-at="2021-03-04T12:42:52 IST" finished-at="2021-03-04T12:42:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetDishById -->
+        <test-method status="PASS" signature="GetDishById1()[pri:5, instance:com.java.foodybiee.dish.Dish_All_Get_TestCases@10a035a0]" name="GetDishById1" duration-ms="1289" started-at="2021-03-04T12:42:53 IST" finished-at="2021-03-04T12:42:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetDishById1 -->
+        <test-method status="PASS" signature="GetListOfValues()[pri:6, instance:com.java.foodybiee.dish.Dish_All_Get_TestCases@10a035a0]" name="GetListOfValues" duration-ms="1202" started-at="2021-03-04T12:42:54 IST" finished-at="2021-03-04T12:42:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetListOfValues -->
+        <test-method status="PASS" signature="GetFullDishById()[pri:7, instance:com.java.foodybiee.dish.Dish_All_Get_TestCases@10a035a0]" name="GetFullDishById" duration-ms="1195" started-at="2021-03-04T12:42:56 IST" finished-at="2021-03-04T12:42:57 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetFullDishById -->
+        <test-method status="PASS" signature="GetDishCategories()[pri:8, instance:com.java.foodybiee.dish.Dish_All_Get_TestCases@10a035a0]" name="GetDishCategories" duration-ms="1182" started-at="2021-03-04T12:42:57 IST" finished-at="2021-03-04T12:42:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetDishCategories -->
+        <test-method status="PASS" signature="GetMostOrderedAndTopRatedDish()[pri:9, instance:com.java.foodybiee.dish.Dish_All_Get_TestCases@10a035a0]" name="GetMostOrderedAndTopRatedDish" duration-ms="1205" started-at="2021-03-04T12:42:58 IST" finished-at="2021-03-04T12:42:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetMostOrderedAndTopRatedDish -->
+      </class> <!-- com.java.foodybiee.dish.Dish_All_Get_TestCases -->
+    </test> <!-- dish -->
+    <test name="payment" duration-ms="1439" started-at="2021-03-04T12:42:59 IST" finished-at="2021-03-04T12:43:01 IST">
+      <class name="com.java.foodybiee.payment.Payment">
+        <test-method status="PASS" signature="SetupDriver()[pri:0, instance:com.java.foodybiee.payment.Payment@646007f4]" name="SetupDriver" is-config="true" duration-ms="1" started-at="2021-03-04T12:42:59 IST" finished-at="2021-03-04T12:42:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupDriver -->
+        <test-method status="PASS" signature="GetHandleRequest()[pri:1, instance:com.java.foodybiee.payment.Payment@646007f4]" name="GetHandleRequest" duration-ms="1437" started-at="2021-03-04T12:42:59 IST" finished-at="2021-03-04T12:43:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetHandleRequest -->
+      </class> <!-- com.java.foodybiee.payment.Payment -->
+    </test> <!-- payment -->
+    <test name="aboutus" duration-ms="1331" started-at="2021-03-04T12:43:01 IST" finished-at="2021-03-04T12:43:02 IST">
+      <class name="com.java.foodybiee.aboutus.chef.AboutUs">
+        <test-method status="PASS" signature="GetAllChef()[pri:1, instance:com.java.foodybiee.aboutus.chef.AboutUs@4c762604]" name="GetAllChef" duration-ms="1330" started-at="2021-03-04T12:43:01 IST" finished-at="2021-03-04T12:43:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAllChef -->
+      </class> <!-- com.java.foodybiee.aboutus.chef.AboutUs -->
+    </test> <!-- aboutus -->
+    <test name="userinfo" duration-ms="37464" started-at="2021-03-04T12:43:02 IST" finished-at="2021-03-04T12:43:39 IST">
+      <class name="com.java.foodybiee.userinfo.UserInfo_All_TestCases">
+        <test-method status="PASS" signature="SetupDriver()[pri:0, instance:com.java.foodybiee.userinfo.UserInfo_All_TestCases@fcd6521]" name="SetupDriver" is-config="true" duration-ms="1" started-at="2021-03-04T12:43:02 IST" finished-at="2021-03-04T12:43:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupDriver -->
+        <test-method status="PASS" signature="AddUserInfo()[pri:1, instance:com.java.foodybiee.userinfo.UserInfo_All_TestCases@fcd6521]" name="AddUserInfo" duration-ms="1384" started-at="2021-03-04T12:43:02 IST" finished-at="2021-03-04T12:43:03 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddUserInfo -->
+        <test-method status="PASS" signature="GetAddUserDetailsByUserId()[pri:2, instance:com.java.foodybiee.userinfo.UserInfo_All_TestCases@fcd6521]" name="GetAddUserDetailsByUserId" duration-ms="1201" started-at="2021-03-04T12:43:03 IST" finished-at="2021-03-04T12:43:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAddUserDetailsByUserId -->
+        <test-method status="PASS" signature="DeleteUserInfo()[pri:3, instance:com.java.foodybiee.userinfo.UserInfo_All_TestCases@fcd6521]" name="DeleteUserInfo" duration-ms="1193" started-at="2021-03-04T12:43:05 IST" finished-at="2021-03-04T12:43:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteUserInfo -->
+        <test-method status="PASS" signature="GetUserPrivilegeStatus()[pri:4, instance:com.java.foodybiee.userinfo.UserInfo_All_TestCases@fcd6521]" name="GetUserPrivilegeStatus" duration-ms="1179" started-at="2021-03-04T12:43:06 IST" finished-at="2021-03-04T12:43:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUserPrivilegeStatus -->
+        <test-method status="PASS" signature="GetUserDetailsByEmail()[pri:5, instance:com.java.foodybiee.userinfo.UserInfo_All_TestCases@fcd6521]" name="GetUserDetailsByEmail" duration-ms="1230" started-at="2021-03-04T12:43:07 IST" finished-at="2021-03-04T12:43:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUserDetailsByEmail -->
+        <test-method status="PASS" signature="GetUserDetailsByUserId()[pri:6, instance:com.java.foodybiee.userinfo.UserInfo_All_TestCases@fcd6521]" name="GetUserDetailsByUserId" duration-ms="1189" started-at="2021-03-04T12:43:08 IST" finished-at="2021-03-04T12:43:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUserDetailsByUserId -->
+        <test-method status="PASS" signature="GetAllUserInfoByGivingRoleId()[pri:7, instance:com.java.foodybiee.userinfo.UserInfo_All_TestCases@fcd6521]" name="GetAllUserInfoByGivingRoleId" duration-ms="1181" started-at="2021-03-04T12:43:09 IST" finished-at="2021-03-04T12:43:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAllUserInfoByGivingRoleId -->
+        <test-method status="PASS" signature="GetUserRoleInfo()[pri:8, instance:com.java.foodybiee.userinfo.UserInfo_All_TestCases@fcd6521]" name="GetUserRoleInfo" duration-ms="1318" started-at="2021-03-04T12:43:11 IST" finished-at="2021-03-04T12:43:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUserRoleInfo -->
+        <test-method status="PASS" signature="GetAllUserInfo()[pri:9, instance:com.java.foodybiee.userinfo.UserInfo_All_TestCases@fcd6521]" name="GetAllUserInfo" duration-ms="1303" started-at="2021-03-04T12:43:12 IST" finished-at="2021-03-04T12:43:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAllUserInfo -->
+        <test-method status="PASS" signature="mongodb()[pri:10, instance:com.java.foodybiee.userinfo.UserInfo_All_TestCases@fcd6521]" name="mongodb" duration-ms="3434" started-at="2021-03-04T12:43:13 IST" finished-at="2021-03-04T12:43:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mongodb -->
+      </class> <!-- com.java.foodybiee.userinfo.UserInfo_All_TestCases -->
+      <class name="com.java.foodybiee.userinfo.UserInfo_Negative_TestCases">
+        <test-method status="PASS" signature="SetupDriver()[pri:0, instance:com.java.foodybiee.userinfo.UserInfo_Negative_TestCases@27d415d9]" name="SetupDriver" is-config="true" duration-ms="1" started-at="2021-03-04T12:43:17 IST" finished-at="2021-03-04T12:43:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupDriver -->
+        <test-method status="PASS" signature="GetUserPrivilegeStatusUnauthorized()[pri:1, instance:com.java.foodybiee.userinfo.UserInfo_Negative_TestCases@27d415d9]" name="GetUserPrivilegeStatusUnauthorized" duration-ms="1267" started-at="2021-03-04T12:43:17 IST" finished-at="2021-03-04T12:43:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUserPrivilegeStatusUnauthorized -->
+        <test-method status="PASS" signature="GetUserPrivilegeStatusBadRequest()[pri:2, instance:com.java.foodybiee.userinfo.UserInfo_Negative_TestCases@27d415d9]" name="GetUserPrivilegeStatusBadRequest" duration-ms="1193" started-at="2021-03-04T12:43:18 IST" finished-at="2021-03-04T12:43:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUserPrivilegeStatusBadRequest -->
+        <test-method status="PASS" signature="GetUserPrivilegeStatusNotFound()[pri:3, instance:com.java.foodybiee.userinfo.UserInfo_Negative_TestCases@27d415d9]" name="GetUserPrivilegeStatusNotFound" duration-ms="1173" started-at="2021-03-04T12:43:19 IST" finished-at="2021-03-04T12:43:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUserPrivilegeStatusNotFound -->
+        <test-method status="PASS" signature="GetUserDetailsByEmailUnauthorized()[pri:4, instance:com.java.foodybiee.userinfo.UserInfo_Negative_TestCases@27d415d9]" name="GetUserDetailsByEmailUnauthorized" duration-ms="1202" started-at="2021-03-04T12:43:20 IST" finished-at="2021-03-04T12:43:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUserDetailsByEmailUnauthorized -->
+        <test-method status="PASS" signature="GetUserDetailsByEmailBadRequest()[pri:5, instance:com.java.foodybiee.userinfo.UserInfo_Negative_TestCases@27d415d9]" name="GetUserDetailsByEmailBadRequest" duration-ms="1206" started-at="2021-03-04T12:43:21 IST" finished-at="2021-03-04T12:43:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUserDetailsByEmailBadRequest -->
+        <test-method status="PASS" signature="GetUserDetailsByEmailNotFound()[pri:6, instance:com.java.foodybiee.userinfo.UserInfo_Negative_TestCases@27d415d9]" name="GetUserDetailsByEmailNotFound" duration-ms="1175" started-at="2021-03-04T12:43:23 IST" finished-at="2021-03-04T12:43:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUserDetailsByEmailNotFound -->
+        <test-method status="PASS" signature="GetUserDetailsByUserIdUnauthorized()[pri:7, instance:com.java.foodybiee.userinfo.UserInfo_Negative_TestCases@27d415d9]" name="GetUserDetailsByUserIdUnauthorized" duration-ms="1157" started-at="2021-03-04T12:43:24 IST" finished-at="2021-03-04T12:43:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUserDetailsByUserIdUnauthorized -->
+        <test-method status="PASS" signature="GetUserDetailsByUserIdBadRequest()[pri:8, instance:com.java.foodybiee.userinfo.UserInfo_Negative_TestCases@27d415d9]" name="GetUserDetailsByUserIdBadRequest" duration-ms="1200" started-at="2021-03-04T12:43:25 IST" finished-at="2021-03-04T12:43:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUserDetailsByUserIdBadRequest -->
+        <test-method status="PASS" signature="GetUserDetailsByUserIdNotFound()[pri:9, instance:com.java.foodybiee.userinfo.UserInfo_Negative_TestCases@27d415d9]" name="GetUserDetailsByUserIdNotFound" duration-ms="1201" started-at="2021-03-04T12:43:26 IST" finished-at="2021-03-04T12:43:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUserDetailsByUserIdNotFound -->
+        <test-method status="PASS" signature="GetAllUserInfoByGivingRoleIdUnauthorized()[pri:10, instance:com.java.foodybiee.userinfo.UserInfo_Negative_TestCases@27d415d9]" name="GetAllUserInfoByGivingRoleIdUnauthorized" duration-ms="1190" started-at="2021-03-04T12:43:27 IST" finished-at="2021-03-04T12:43:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAllUserInfoByGivingRoleIdUnauthorized -->
+        <test-method status="PASS" signature="GetAllUserInfoByGivingRoleIdBadRequest()[pri:11, instance:com.java.foodybiee.userinfo.UserInfo_Negative_TestCases@27d415d9]" name="GetAllUserInfoByGivingRoleIdBadRequest" duration-ms="1180" started-at="2021-03-04T12:43:29 IST" finished-at="2021-03-04T12:43:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAllUserInfoByGivingRoleIdBadRequest -->
+        <test-method status="PASS" signature="GetAllUserInfoByGivingRoleIdNotFound()[pri:12, instance:com.java.foodybiee.userinfo.UserInfo_Negative_TestCases@27d415d9]" name="GetAllUserInfoByGivingRoleIdNotFound" duration-ms="1202" started-at="2021-03-04T12:43:30 IST" finished-at="2021-03-04T12:43:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAllUserInfoByGivingRoleIdNotFound -->
+        <test-method status="PASS" signature="GetUserRoleInfoUnauthorized()[pri:13, instance:com.java.foodybiee.userinfo.UserInfo_Negative_TestCases@27d415d9]" name="GetUserRoleInfoUnauthorized" duration-ms="1185" started-at="2021-03-04T12:43:31 IST" finished-at="2021-03-04T12:43:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUserRoleInfoUnauthorized -->
+        <test-method status="PASS" signature="GetUserRoleInfoBadRequest()[pri:14, instance:com.java.foodybiee.userinfo.UserInfo_Negative_TestCases@27d415d9]" name="GetUserRoleInfoBadRequest" duration-ms="1197" started-at="2021-03-04T12:43:32 IST" finished-at="2021-03-04T12:43:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUserRoleInfoBadRequest -->
+        <test-method status="PASS" signature="GetUserRoleInfoNotFound()[pri:15, instance:com.java.foodybiee.userinfo.UserInfo_Negative_TestCases@27d415d9]" name="GetUserRoleInfoNotFound" duration-ms="1176" started-at="2021-03-04T12:43:33 IST" finished-at="2021-03-04T12:43:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUserRoleInfoNotFound -->
+        <test-method status="PASS" signature="GetAllUserInfoUnauthorized()[pri:16, instance:com.java.foodybiee.userinfo.UserInfo_Negative_TestCases@27d415d9]" name="GetAllUserInfoUnauthorized" duration-ms="1188" started-at="2021-03-04T12:43:35 IST" finished-at="2021-03-04T12:43:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAllUserInfoUnauthorized -->
+        <test-method status="PASS" signature="GetAllUserInfoBadRequest()[pri:17, instance:com.java.foodybiee.userinfo.UserInfo_Negative_TestCases@27d415d9]" name="GetAllUserInfoBadRequest" duration-ms="1306" started-at="2021-03-04T12:43:36 IST" finished-at="2021-03-04T12:43:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAllUserInfoBadRequest -->
+        <test-method status="PASS" signature="GetAllUserInfoNotFound()[pri:18, instance:com.java.foodybiee.userinfo.UserInfo_Negative_TestCases@27d415d9]" name="GetAllUserInfoNotFound" duration-ms="1247" started-at="2021-03-04T12:43:37 IST" finished-at="2021-03-04T12:43:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAllUserInfoNotFound -->
+        <test-method status="PASS" signature="AddUserInfoUnauthorized()[pri:19, instance:com.java.foodybiee.userinfo.UserInfo_Negative_TestCases@27d415d9]" name="AddUserInfoUnauthorized" duration-ms="1169" started-at="2021-03-04T12:43:38 IST" finished-at="2021-03-04T12:43:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddUserInfoUnauthorized -->
+      </class> <!-- com.java.foodybiee.userinfo.UserInfo_Negative_TestCases -->
+    </test> <!-- userinfo -->
+    <test name="notification" duration-ms="15527" started-at="2021-03-04T12:43:39 IST" finished-at="2021-03-04T12:43:55 IST">
+      <class name="com.java.foodybiee.notifications.Notification_All_Negative_TestCases">
+        <test-method status="PASS" signature="SetupDriver()[pri:0, instance:com.java.foodybiee.notifications.Notification_All_Negative_TestCases@b3d7190]" name="SetupDriver" is-config="true" duration-ms="0" started-at="2021-03-04T12:43:50 IST" finished-at="2021-03-04T12:43:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupDriver -->
+        <test-method status="PASS" signature="AddNotificationUnauthorized()[pri:1, instance:com.java.foodybiee.notifications.Notification_All_Negative_TestCases@b3d7190]" name="AddNotificationUnauthorized" duration-ms="1184" started-at="2021-03-04T12:43:50 IST" finished-at="2021-03-04T12:43:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddNotificationUnauthorized -->
+        <test-method status="PASS" signature="GetNotificationByIdNotFound()[pri:2, instance:com.java.foodybiee.notifications.Notification_All_Negative_TestCases@b3d7190]" name="GetNotificationByIdNotFound" duration-ms="1174" started-at="2021-03-04T12:43:51 IST" finished-at="2021-03-04T12:43:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetNotificationByIdNotFound -->
+        <test-method status="PASS" signature="GetNotificationByIdUnauthorized()[pri:2, instance:com.java.foodybiee.notifications.Notification_All_Negative_TestCases@b3d7190]" name="GetNotificationByIdUnauthorized" duration-ms="1163" started-at="2021-03-04T12:43:53 IST" finished-at="2021-03-04T12:43:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetNotificationByIdUnauthorized -->
+        <test-method status="PASS" signature="GetNotificationRoleUnauthorized()[pri:3, instance:com.java.foodybiee.notifications.Notification_All_Negative_TestCases@b3d7190]" name="GetNotificationRoleUnauthorized" duration-ms="1182" started-at="2021-03-04T12:43:54 IST" finished-at="2021-03-04T12:43:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetNotificationRoleUnauthorized -->
+      </class> <!-- com.java.foodybiee.notifications.Notification_All_Negative_TestCases -->
+      <class name="com.java.foodybiee.notifications.Notification_All_TestCases">
+        <test-method status="PASS" signature="SetupDriver()[pri:0, instance:com.java.foodybiee.notifications.Notification_All_TestCases@17211155]" name="SetupDriver" is-config="true" duration-ms="0" started-at="2021-03-04T12:43:39 IST" finished-at="2021-03-04T12:43:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupDriver -->
+        <test-method status="PASS" signature="AddNotification()[pri:1, instance:com.java.foodybiee.notifications.Notification_All_TestCases@17211155]" name="AddNotification" duration-ms="1213" started-at="2021-03-04T12:43:39 IST" finished-at="2021-03-04T12:43:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddNotification -->
+        <test-method status="PASS" signature="GetNotificationById()[pri:2, instance:com.java.foodybiee.notifications.Notification_All_TestCases@17211155]" name="GetNotificationById" duration-ms="1186" started-at="2021-03-04T12:43:41 IST" finished-at="2021-03-04T12:43:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetNotificationById -->
+        <test-method status="PASS" signature="UpdateNotification()[pri:3, instance:com.java.foodybiee.notifications.Notification_All_TestCases@17211155]" name="UpdateNotification" duration-ms="1206" started-at="2021-03-04T12:43:42 IST" finished-at="2021-03-04T12:43:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateNotification -->
+        <test-method status="PASS" signature="GetUpdatedNotificationById1()[pri:4, instance:com.java.foodybiee.notifications.Notification_All_TestCases@17211155]" name="GetUpdatedNotificationById1" duration-ms="1165" started-at="2021-03-04T12:43:43 IST" finished-at="2021-03-04T12:43:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUpdatedNotificationById1 -->
+        <test-method status="PASS" signature="DeleteNotificationById()[pri:5, instance:com.java.foodybiee.notifications.Notification_All_TestCases@17211155]" name="DeleteNotificationById" duration-ms="1213" started-at="2021-03-04T12:43:44 IST" finished-at="2021-03-04T12:43:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteNotificationById -->
+        <test-method status="PASS" signature="GetDeletedNotificationById1()[pri:6, instance:com.java.foodybiee.notifications.Notification_All_TestCases@17211155]" name="GetDeletedNotificationById1" duration-ms="1181" started-at="2021-03-04T12:43:45 IST" finished-at="2021-03-04T12:43:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetDeletedNotificationById1 -->
+        <test-method status="PASS" signature="GetNotificationRole()[pri:7, instance:com.java.foodybiee.notifications.Notification_All_TestCases@17211155]" name="GetNotificationRole" duration-ms="1184" started-at="2021-03-04T12:43:47 IST" finished-at="2021-03-04T12:43:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetNotificationRole -->
+        <test-method status="PASS" signature="GetNotificationByName()[pri:8, instance:com.java.foodybiee.notifications.Notification_All_TestCases@17211155]" name="GetNotificationByName" duration-ms="1278" started-at="2021-03-04T12:43:48 IST" finished-at="2021-03-04T12:43:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetNotificationByName -->
+        <test-method status="PASS" signature="GetAllNotification()[pri:9, instance:com.java.foodybiee.notifications.Notification_All_TestCases@17211155]" name="GetAllNotification" duration-ms="1184" started-at="2021-03-04T12:43:49 IST" finished-at="2021-03-04T12:43:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAllNotification -->
+      </class> <!-- com.java.foodybiee.notifications.Notification_All_TestCases -->
+    </test> <!-- notification -->
+  </suite> <!-- Suite -->
+</testng-results>

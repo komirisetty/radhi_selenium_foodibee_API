@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="browser" value="" />
+	<!-- <listeners>
+		<listener
+			class-name="com.java.foodybiee.setup.ExtentReporterNG"></listener>
+	</listeners> -->
+
+	<test thread-count="1" name="Consumer">
+		<classes>
+			<class
+				name="com.java.foodybiee.consumer.Consumer_All_TestCases" />
+			<class
+				name="com.java.foodybiee.consumer.Consumer_All_Negative_TestCases" />
+		</classes>
+	</test>
+
+	<test thread-count="1" name="Country">
+		<classes>
+			<class name="com.java.foodybiee.country.Country_All_Testcases" />
+			<class
+				name="com.java.foodybiee.country.Country_Negative_Testcases" />
+		</classes>
+	</test>
+
+	<test thread-count="1" name="Dashboard">
+		<classes>
+			<class
+				name="com.java.foodybiee.dashboard.Dashboard_All_TestCase" />
+			<class
+				name="com.java.foodybiee.dashboard.Dashboard_All_Negative_TestCases" />
+		</classes>
+	</test>
+
+	<test thread-count="1" name="AddToCart">
+		<classes>
+			<class
+				name="com.java.foodybiee.addtocart.AddToCart_All_TestCases" />
+			<class
+				name="com.java.foodybiee.addtocart.AddToCart_Negative_TestCases" />
+		</classes>
+	</test>
+	<test thread-count="1" name="franchise">
+		<classes>
+			<class name="com.java.foodybiee.franchisee.FranchiseDetails" />
+			<class
+				name="com.java.foodybiee.franchisee.Franchisee_All_TestCases" />
+
+			<class name="com.java.foodybiee.franchisee.FranchiseMapping" />
+		</classes>
+	</test>
+
+	<test thread-count="1" name="role">
+		<classes>
+			<class name="com.java.foodybiee.role.Role_TestCases" />
+		</classes>
+	</test>
+
+
+	<test thread-count="1" name="assets">
+		<classes>
+			<class name="com.java.foodybiee.assets.Assets_TestCase" />
+		</classes>
+	</test>
+	
+	<test thread-count="1" name="leftmenu">
+		<classes>
+			<class
+				name="com.java.foodybiee.leftmenu.LeftMenu_All_TestCases" />
+		</classes>
+	</test>
+
+	<test thread-count="1" name="chef">
+		<classes>
+			<class name="com.java.foodybiee.chef.Chef_All_Get_TestCases" />
+		</classes>
+	</test>
+	
+	<test thread-count="1" name="chefprofilemobile">
+		<classes>
+			<class name="com.java.foodybiee.chefprofilemobile.ChefProfileMobile" />
+		</classes>
+	</test>
+
+	<test thread-count="1" name="havingrefferal">
+		<classes>
+			<class name="com.java.foodybiee.havingrefferal.Refferal" />
+		</classes>
+	</test>
+
+	<test thread-count="1" name="invoice">
+		<classes>
+			<class name="com.java.foodybiee.invoice.Invoice" />
+		</classes>
+	</test>
+
+	<test thread-count="1" name="dish">
+		<classes>
+			<class name="com.java.foodybiee.dish.Dish_All_Get_TestCases" />
+		</classes>
+	</test>
+
+	<test thread-count="1" name="payment">
+		<classes>
+			<class name="com.java.foodybiee.payment.Payment" />
+		</classes>
+	</test>
+	
+	<test thread-count="1" name="aboutus">
+		<classes>
+			<class name="com.java.foodybiee.aboutus.chef.AboutUs" />
+		</classes>
+	</test>
+
+	<test thread-count="1" name="userinfo">
+		<classes>
+			<class
+				name="com.java.foodybiee.userinfo.UserInfo_All_TestCases" />
+			<class
+				name="com.java.foodybiee.userinfo.UserInfo_Negative_TestCases" />
+		</classes>
+	</test>
+	<test thread-count="1" name="notification">
+		<classes>
+			<class
+				name="com.java.foodybiee.notifications.Notification_All_TestCases" />
+			<class
+				name="com.java.foodybiee.notifications.Notification_All_Negative_TestCases" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->

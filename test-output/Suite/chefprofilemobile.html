@@ -1,0 +1,564 @@
+<html>
+<head>
+<title>TestNG:  chefprofilemobile</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>chefprofilemobile</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Mar 04 12:42:36 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>8 seconds (8800 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.java.foodybiee.consumer.Consumer_All_TestCases.AddDeliveryAddress()'><b>AddDeliveryAddress</b><br>Test class: com.java.foodybiee.consumer.Consumer_All_TestCases</td>
+<td></td>
+<td>4</td>
+<td>com.java.foodybiee.consumer.Consumer_All_TestCases@2173f6d9</td></tr>
+<tr>
+<td title='com.java.foodybiee.consumer.Consumer_All_Negative_TestCases.AddDeliveryAddressBadRequest()'><b>AddDeliveryAddressBadRequest</b><br>Test class: com.java.foodybiee.consumer.Consumer_All_Negative_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c</td></tr>
+<tr>
+<td title='com.java.foodybiee.consumer.Consumer_All_Negative_TestCases.AddDeliveryAddressUnauthorized()'><b>AddDeliveryAddressUnauthorized</b><br>Test class: com.java.foodybiee.consumer.Consumer_All_Negative_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c</td></tr>
+<tr>
+<td title='com.java.foodybiee.chefprofilemobile.ChefProfileMobile.AddRatingsAndCommentForDish()'><b>AddRatingsAndCommentForDish</b><br>Test class: com.java.foodybiee.chefprofilemobile.ChefProfileMobile</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.chefprofilemobile.ChefProfileMobile@365185bd</td></tr>
+<tr>
+<td title='com.java.foodybiee.addtocart.AddToCart_All_TestCases.AddToCart()'><b>AddToCart</b><br>Test class: com.java.foodybiee.addtocart.AddToCart_All_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.addtocart.AddToCart_All_TestCases@87f383f</td></tr>
+<tr>
+<td title='com.java.foodybiee.addtocart.AddToCart_Negative_TestCases.AddToCartBadRequest()'><b>AddToCartBadRequest</b><br>Test class: com.java.foodybiee.addtocart.AddToCart_Negative_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.addtocart.AddToCart_Negative_TestCases@4eb7f003</td></tr>
+<tr>
+<td title='com.java.foodybiee.addtocart.AddToCart_Negative_TestCases.AddToCartUnauthorized()'><b>AddToCartUnauthorized</b><br>Test class: com.java.foodybiee.addtocart.AddToCart_Negative_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.addtocart.AddToCart_Negative_TestCases@4eb7f003</td></tr>
+<tr>
+<td title='com.java.foodybiee.addtocart.AddToCart_All_TestCases.DeleteAllItemFromCart()'><b>DeleteAllItemFromCart</b><br>Test class: com.java.foodybiee.addtocart.AddToCart_All_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.addtocart.AddToCart_All_TestCases@87f383f</td></tr>
+<tr>
+<td title='com.java.foodybiee.addtocart.AddToCart_Negative_TestCases.DeleteAllItemFromCartUnauthorized()'><b>DeleteAllItemFromCartUnauthorized</b><br>Test class: com.java.foodybiee.addtocart.AddToCart_Negative_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.addtocart.AddToCart_Negative_TestCases@4eb7f003</td></tr>
+<tr>
+<td title='com.java.foodybiee.consumer.Consumer_All_TestCases.DeleteDeliveryAddress()'><b>DeleteDeliveryAddress</b><br>Test class: com.java.foodybiee.consumer.Consumer_All_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.consumer.Consumer_All_TestCases@2173f6d9</td></tr>
+<tr>
+<td title='com.java.foodybiee.consumer.Consumer_All_Negative_TestCases.DeleteDeliveryAddressNotFound()'><b>DeleteDeliveryAddressNotFound</b><br>Test class: com.java.foodybiee.consumer.Consumer_All_Negative_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c</td></tr>
+<tr>
+<td title='com.java.foodybiee.consumer.Consumer_All_Negative_TestCases.DeleteDeliveryAddressUnauthorized()'><b>DeleteDeliveryAddressUnauthorized</b><br>Test class: com.java.foodybiee.consumer.Consumer_All_Negative_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c</td></tr>
+<tr>
+<td title='com.java.foodybiee.addtocart.AddToCart_All_TestCases.GetAddedItemInCartList()'><b>GetAddedItemInCartList</b><br>Test class: com.java.foodybiee.addtocart.AddToCart_All_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.addtocart.AddToCart_All_TestCases@87f383f</td></tr>
+<tr>
+<td title='com.java.foodybiee.addtocart.AddToCart_Negative_TestCases.GetAddedItemInCartListBadRequest()'><b>GetAddedItemInCartListBadRequest</b><br>Test class: com.java.foodybiee.addtocart.AddToCart_Negative_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.addtocart.AddToCart_Negative_TestCases@4eb7f003</td></tr>
+<tr>
+<td title='com.java.foodybiee.addtocart.AddToCart_Negative_TestCases.GetAddedItemInCartListNotFound()'><b>GetAddedItemInCartListNotFound</b><br>Test class: com.java.foodybiee.addtocart.AddToCart_Negative_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.addtocart.AddToCart_Negative_TestCases@4eb7f003</td></tr>
+<tr>
+<td title='com.java.foodybiee.addtocart.AddToCart_Negative_TestCases.GetAddedItemInCartListUnauthorizeds()'><b>GetAddedItemInCartListUnauthorizeds</b><br>Test class: com.java.foodybiee.addtocart.AddToCart_Negative_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.addtocart.AddToCart_Negative_TestCases@4eb7f003</td></tr>
+<tr>
+<td title='com.java.foodybiee.franchisee.FranchiseDetails.GetAllFranchiseDetails()'><b>GetAllFranchiseDetails</b><br>Test class: com.java.foodybiee.franchisee.FranchiseDetails</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.franchisee.FranchiseDetails@4a87761d</td></tr>
+<tr>
+<td title='com.java.foodybiee.assets.Assets_TestCase.GetAllUIAssets()'><b>GetAllUIAssets</b><br>Test class: com.java.foodybiee.assets.Assets_TestCase</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.assets.Assets_TestCase@7a30d1e6</td></tr>
+<tr>
+<td title='com.java.foodybiee.consumer.Consumer_All_TestCases.GetAvailableAddress()'><b>GetAvailableAddress</b><br>Test class: com.java.foodybiee.consumer.Consumer_All_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.consumer.Consumer_All_TestCases@2173f6d9</td></tr>
+<tr>
+<td title='com.java.foodybiee.consumer.Consumer_All_Negative_TestCases.GetAvailableAddressBadRequest()'><b>GetAvailableAddressBadRequest</b><br>Test class: com.java.foodybiee.consumer.Consumer_All_Negative_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c</td></tr>
+<tr>
+<td title='com.java.foodybiee.consumer.Consumer_All_Negative_TestCases.GetAvailableAddressNotFound()'><b>GetAvailableAddressNotFound</b><br>Test class: com.java.foodybiee.consumer.Consumer_All_Negative_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c</td></tr>
+<tr>
+<td title='com.java.foodybiee.consumer.Consumer_All_Negative_TestCases.GetAvailableAddressUnauthorized()'><b>GetAvailableAddressUnauthorized</b><br>Test class: com.java.foodybiee.consumer.Consumer_All_Negative_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c</td></tr>
+<tr>
+<td title='com.java.foodybiee.addtocart.AddToCart_All_TestCases.GetCartList()'><b>GetCartList</b><br>Test class: com.java.foodybiee.addtocart.AddToCart_All_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.addtocart.AddToCart_All_TestCases@87f383f</td></tr>
+<tr>
+<td title='com.java.foodybiee.chef.Chef_All_Get_TestCases.GetChefByEmail()'><b>GetChefByEmail</b><br>Test class: com.java.foodybiee.chef.Chef_All_Get_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.chef.Chef_All_Get_TestCases@1fc2b765</td></tr>
+<tr>
+<td title='com.java.foodybiee.chef.Chef_All_Get_TestCases.GetChefByFranchise()'><b>GetChefByFranchise</b><br>Test class: com.java.foodybiee.chef.Chef_All_Get_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.chef.Chef_All_Get_TestCases@1fc2b765</td></tr>
+<tr>
+<td title='com.java.foodybiee.chef.Chef_All_Get_TestCases.GetChefCountList()'><b>GetChefCountList</b><br>Test class: com.java.foodybiee.chef.Chef_All_Get_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.chef.Chef_All_Get_TestCases@1fc2b765</td></tr>
+<tr>
+<td title='com.java.foodybiee.chef.Chef_All_Get_TestCases.GetChefDetailsById()'><b>GetChefDetailsById</b><br>Test class: com.java.foodybiee.chef.Chef_All_Get_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.chef.Chef_All_Get_TestCases@1fc2b765</td></tr>
+<tr>
+<td title='com.java.foodybiee.chef.Chef_All_Get_TestCases.GetChefForLocation()'><b>GetChefForLocation</b><br>Test class: com.java.foodybiee.chef.Chef_All_Get_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.chef.Chef_All_Get_TestCases@1fc2b765</td></tr>
+<tr>
+<td title='com.java.foodybiee.chefprofilemobile.ChefProfileMobile.GetChefProfileMobileList()'><b>GetChefProfileMobileList</b><br>Test class: com.java.foodybiee.chefprofilemobile.ChefProfileMobile</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.chefprofilemobile.ChefProfileMobile@365185bd</td></tr>
+<tr>
+<td title='com.java.foodybiee.chefprofilemobile.ChefProfileMobile.GetChefRatingsAndReviews()'><b>GetChefRatingsAndReviews</b><br>Test class: com.java.foodybiee.chefprofilemobile.ChefProfileMobile</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.chefprofilemobile.ChefProfileMobile@365185bd</td></tr>
+<tr>
+<td title='com.java.foodybiee.leftmenu.LeftMenu_All_TestCases.GetChefSideMenu()'><b>GetChefSideMenu</b><br>Test class: com.java.foodybiee.leftmenu.LeftMenu_All_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.leftmenu.LeftMenu_All_TestCases@4e718207</td></tr>
+<tr>
+<td title='com.java.foodybiee.chef.Chef_All_Get_TestCases.GetChefStatus()'><b>GetChefStatus</b><br>Test class: com.java.foodybiee.chef.Chef_All_Get_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.chef.Chef_All_Get_TestCases@1fc2b765</td></tr>
+<tr>
+<td title='com.java.foodybiee.country.Country_All_Testcases.GetCityByState()'><b>GetCityByState</b><br>Test class: com.java.foodybiee.country.Country_All_Testcases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.country.Country_All_Testcases@44c8afef</td></tr>
+<tr>
+<td title='com.java.foodybiee.country.Country_Negative_Testcases.GetCityByStateBadRequest()'><b>GetCityByStateBadRequest</b><br>Test class: com.java.foodybiee.country.Country_Negative_Testcases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.country.Country_Negative_Testcases@7b69c6ba</td></tr>
+<tr>
+<td title='com.java.foodybiee.country.Country_Negative_Testcases.GetCityByStateNotFound()'><b>GetCityByStateNotFound</b><br>Test class: com.java.foodybiee.country.Country_Negative_Testcases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.country.Country_Negative_Testcases@7b69c6ba</td></tr>
+<tr>
+<td title='com.java.foodybiee.country.Country_Negative_Testcases.GetCityByStateUnauthorized()'><b>GetCityByStateUnauthorized</b><br>Test class: com.java.foodybiee.country.Country_Negative_Testcases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.country.Country_Negative_Testcases@7b69c6ba</td></tr>
+<tr>
+<td title='com.java.foodybiee.leftmenu.LeftMenu_All_TestCases.GetConsumer()'><b>GetConsumer</b><br>Test class: com.java.foodybiee.leftmenu.LeftMenu_All_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.leftmenu.LeftMenu_All_TestCases@4e718207</td></tr>
+<tr>
+<td title='com.java.foodybiee.country.Country_All_Testcases.GetCountry()'><b>GetCountry</b><br>Test class: com.java.foodybiee.country.Country_All_Testcases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.country.Country_All_Testcases@44c8afef</td></tr>
+<tr>
+<td title='com.java.foodybiee.country.Country_Negative_Testcases.GetCountryUnauthorized()'><b>GetCountryUnauthorized</b><br>Test class: com.java.foodybiee.country.Country_Negative_Testcases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.country.Country_Negative_Testcases@7b69c6ba</td></tr>
+<tr>
+<td title='com.java.foodybiee.dashboard.Dashboard_All_TestCase.GetDashboarGlobalSearchChef()'><b>GetDashboarGlobalSearchChef</b><br>Test class: com.java.foodybiee.dashboard.Dashboard_All_TestCase</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.dashboard.Dashboard_All_TestCase@1e7c7811</td></tr>
+<tr>
+<td title='com.java.foodybiee.dashboard.Dashboard_All_Negative_TestCases.GetDashboarGlobalSearchChefUnauthorized()'><b>GetDashboarGlobalSearchChefUnauthorized</b><br>Test class: com.java.foodybiee.dashboard.Dashboard_All_Negative_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.dashboard.Dashboard_All_Negative_TestCases@77ec78b9</td></tr>
+<tr>
+<td title='com.java.foodybiee.dashboard.Dashboard_All_TestCase.GetDashboarMobileSearch()'><b>GetDashboarMobileSearch</b><br>Test class: com.java.foodybiee.dashboard.Dashboard_All_TestCase</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.dashboard.Dashboard_All_TestCase@1e7c7811</td></tr>
+<tr>
+<td title='com.java.foodybiee.dashboard.Dashboard_All_Negative_TestCases.GetDashboarMobileSearchUnauthorized()'><b>GetDashboarMobileSearchUnauthorized</b><br>Test class: com.java.foodybiee.dashboard.Dashboard_All_Negative_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.dashboard.Dashboard_All_Negative_TestCases@77ec78b9</td></tr>
+<tr>
+<td title='com.java.foodybiee.dashboard.Dashboard_All_TestCase.GetDashboarSearchChefMobile()'><b>GetDashboarSearchChefMobile</b><br>Test class: com.java.foodybiee.dashboard.Dashboard_All_TestCase</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.dashboard.Dashboard_All_TestCase@1e7c7811</td></tr>
+<tr>
+<td title='com.java.foodybiee.dashboard.Dashboard_All_Negative_TestCases.GetDashboarSearchChefMobileUnauthorized()'><b>GetDashboarSearchChefMobileUnauthorized</b><br>Test class: com.java.foodybiee.dashboard.Dashboard_All_Negative_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.dashboard.Dashboard_All_Negative_TestCases@77ec78b9</td></tr>
+<tr>
+<td title='com.java.foodybiee.dashboard.Dashboard_All_TestCase.GetDashboardList()'><b>GetDashboardList</b><br>Test class: com.java.foodybiee.dashboard.Dashboard_All_TestCase</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.dashboard.Dashboard_All_TestCase@1e7c7811</td></tr>
+<tr>
+<td title='com.java.foodybiee.dashboard.Dashboard_All_Negative_TestCases.GetDashboardListUnauthorized()'><b>GetDashboardListUnauthorized</b><br>Test class: com.java.foodybiee.dashboard.Dashboard_All_Negative_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.dashboard.Dashboard_All_Negative_TestCases@77ec78b9</td></tr>
+<tr>
+<td title='com.java.foodybiee.consumer.Consumer_All_TestCases.GetDeletedAvailableAddress()'><b>GetDeletedAvailableAddress</b><br>Test class: com.java.foodybiee.consumer.Consumer_All_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.consumer.Consumer_All_TestCases@2173f6d9</td></tr>
+<tr>
+<td title='com.java.foodybiee.consumer.Consumer_All_TestCases.GetDeliveryCharges()'><b>GetDeliveryCharges</b><br>Test class: com.java.foodybiee.consumer.Consumer_All_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.consumer.Consumer_All_TestCases@2173f6d9</td></tr>
+<tr>
+<td title='com.java.foodybiee.consumer.Consumer_All_Negative_TestCases.GetDeliveryChargesBadRequest()'><b>GetDeliveryChargesBadRequest</b><br>Test class: com.java.foodybiee.consumer.Consumer_All_Negative_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c</td></tr>
+<tr>
+<td title='com.java.foodybiee.consumer.Consumer_All_Negative_TestCases.GetDeliveryChargesNotFound()'><b>GetDeliveryChargesNotFound</b><br>Test class: com.java.foodybiee.consumer.Consumer_All_Negative_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c</td></tr>
+<tr>
+<td title='com.java.foodybiee.consumer.Consumer_All_Negative_TestCases.GetDeliveryChargesUnauthorized()'><b>GetDeliveryChargesUnauthorized</b><br>Test class: com.java.foodybiee.consumer.Consumer_All_Negative_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c</td></tr>
+<tr>
+<td title='com.java.foodybiee.chefprofilemobile.ChefProfileMobile.GetDishRatingAverage()'><b>GetDishRatingAverage</b><br>Test class: com.java.foodybiee.chefprofilemobile.ChefProfileMobile</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.chefprofilemobile.ChefProfileMobile@365185bd</td></tr>
+<tr>
+<td title='com.java.foodybiee.franchisee.Franchisee_All_TestCases.GetFranchiseByEmail()'><b>GetFranchiseByEmail</b><br>Test class: com.java.foodybiee.franchisee.Franchisee_All_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.franchisee.Franchisee_All_TestCases@66d1af89</td></tr>
+<tr>
+<td title='com.java.foodybiee.franchisee.Franchisee_All_TestCases.GetFranchiseById()'><b>GetFranchiseById</b><br>Test class: com.java.foodybiee.franchisee.Franchisee_All_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.franchisee.Franchisee_All_TestCases@66d1af89</td></tr>
+<tr>
+<td title='com.java.foodybiee.franchisee.FranchiseDetails.GetFranchiseDetailsById()'><b>GetFranchiseDetailsById</b><br>Test class: com.java.foodybiee.franchisee.FranchiseDetails</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.franchisee.FranchiseDetails@4a87761d</td></tr>
+<tr>
+<td title='com.java.foodybiee.franchisee.FranchiseMapping.GetFranchiseesMapped()'><b>GetFranchiseesMapped</b><br>Test class: com.java.foodybiee.franchisee.FranchiseMapping</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.franchisee.FranchiseMapping@8646db9</td></tr>
+<tr>
+<td title='com.java.foodybiee.franchisee.Franchisee_All_TestCases.GetKnowMore()'><b>GetKnowMore</b><br>Test class: com.java.foodybiee.franchisee.Franchisee_All_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.franchisee.Franchisee_All_TestCases@66d1af89</td></tr>
+<tr>
+<td title='com.java.foodybiee.leftmenu.LeftMenu_All_TestCases.GetLeftMenu()'><b>GetLeftMenu</b><br>Test class: com.java.foodybiee.leftmenu.LeftMenu_All_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.leftmenu.LeftMenu_All_TestCases@4e718207</td></tr>
+<tr>
+<td title='com.java.foodybiee.consumer.Consumer_All_TestCases.GetNotificationCount()'><b>GetNotificationCount</b><br>Test class: com.java.foodybiee.consumer.Consumer_All_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.consumer.Consumer_All_TestCases@2173f6d9</td></tr>
+<tr>
+<td title='com.java.foodybiee.consumer.Consumer_All_Negative_TestCases.GetNotificationCountBadRequest()'><b>GetNotificationCountBadRequest</b><br>Test class: com.java.foodybiee.consumer.Consumer_All_Negative_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c</td></tr>
+<tr>
+<td title='com.java.foodybiee.consumer.Consumer_All_Negative_TestCases.GetNotificationCountNotFound()'><b>GetNotificationCountNotFound</b><br>Test class: com.java.foodybiee.consumer.Consumer_All_Negative_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c</td></tr>
+<tr>
+<td title='com.java.foodybiee.consumer.Consumer_All_Negative_TestCases.GetNotificationCountUnauthorized()'><b>GetNotificationCountUnauthorized</b><br>Test class: com.java.foodybiee.consumer.Consumer_All_Negative_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c</td></tr>
+<tr>
+<td title='com.java.foodybiee.consumer.Consumer_All_TestCases.GetOrderConfirmAndPay()'><b>GetOrderConfirmAndPay</b><br>Test class: com.java.foodybiee.consumer.Consumer_All_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.consumer.Consumer_All_TestCases@2173f6d9</td></tr>
+<tr>
+<td title='com.java.foodybiee.consumer.Consumer_All_Negative_TestCases.GetOrderConfirmAndPayBadRequest()'><b>GetOrderConfirmAndPayBadRequest</b><br>Test class: com.java.foodybiee.consumer.Consumer_All_Negative_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c</td></tr>
+<tr>
+<td title='com.java.foodybiee.consumer.Consumer_All_Negative_TestCases.GetOrderConfirmAndPayNotFound()'><b>GetOrderConfirmAndPayNotFound</b><br>Test class: com.java.foodybiee.consumer.Consumer_All_Negative_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c</td></tr>
+<tr>
+<td title='com.java.foodybiee.consumer.Consumer_All_Negative_TestCases.GetOrderConfirmAndPayUnauthorized()'><b>GetOrderConfirmAndPayUnauthorized</b><br>Test class: com.java.foodybiee.consumer.Consumer_All_Negative_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c</td></tr>
+<tr>
+<td title='com.java.foodybiee.consumer.Consumer_All_TestCases.GetOrderNo()'><b>GetOrderNo</b><br>Test class: com.java.foodybiee.consumer.Consumer_All_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.consumer.Consumer_All_TestCases@2173f6d9</td></tr>
+<tr>
+<td title='com.java.foodybiee.consumer.Consumer_All_Negative_TestCases.GetOrderNoBadRequest()'><b>GetOrderNoBadRequest</b><br>Test class: com.java.foodybiee.consumer.Consumer_All_Negative_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c</td></tr>
+<tr>
+<td title='com.java.foodybiee.consumer.Consumer_All_Negative_TestCases.GetOrderNoNotFound()'><b>GetOrderNoNotFound</b><br>Test class: com.java.foodybiee.consumer.Consumer_All_Negative_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c</td></tr>
+<tr>
+<td title='com.java.foodybiee.consumer.Consumer_All_Negative_TestCases.GetOrderNoUnauthorized()'><b>GetOrderNoUnauthorized</b><br>Test class: com.java.foodybiee.consumer.Consumer_All_Negative_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c</td></tr>
+<tr>
+<td title='com.java.foodybiee.consumer.Consumer_All_TestCases.GetOrders()'><b>GetOrders</b><br>Test class: com.java.foodybiee.consumer.Consumer_All_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.consumer.Consumer_All_TestCases@2173f6d9</td></tr>
+<tr>
+<td title='com.java.foodybiee.consumer.Consumer_All_Negative_TestCases.GetOrdersBadRequest()'><b>GetOrdersBadRequest</b><br>Test class: com.java.foodybiee.consumer.Consumer_All_Negative_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c</td></tr>
+<tr>
+<td title='com.java.foodybiee.consumer.Consumer_All_Negative_TestCases.GetOrdersNotFound()'><b>GetOrdersNotFound</b><br>Test class: com.java.foodybiee.consumer.Consumer_All_Negative_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c</td></tr>
+<tr>
+<td title='com.java.foodybiee.consumer.Consumer_All_Negative_TestCases.GetOrdersUnauthorized()'><b>GetOrdersUnauthorized</b><br>Test class: com.java.foodybiee.consumer.Consumer_All_Negative_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c</td></tr>
+<tr>
+<td title='com.java.foodybiee.franchisee.Franchisee_All_TestCases.GetPricingModel()'><b>GetPricingModel</b><br>Test class: com.java.foodybiee.franchisee.Franchisee_All_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.franchisee.Franchisee_All_TestCases@66d1af89</td></tr>
+<tr>
+<td title='com.java.foodybiee.franchisee.Franchisee_All_TestCases.GetPricingModelById()'><b>GetPricingModelById</b><br>Test class: com.java.foodybiee.franchisee.Franchisee_All_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.franchisee.Franchisee_All_TestCases@66d1af89</td></tr>
+<tr>
+<td title='com.java.foodybiee.chef.Chef_All_Get_TestCases.GetReviewByChefId()'><b>GetReviewByChefId</b><br>Test class: com.java.foodybiee.chef.Chef_All_Get_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.chef.Chef_All_Get_TestCases@1fc2b765</td></tr>
+<tr>
+<td title='com.java.foodybiee.role.Role_TestCases.GetRole()'><b>GetRole</b><br>Test class: com.java.foodybiee.role.Role_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.role.Role_TestCases@7cbd213e</td></tr>
+<tr>
+<td title='com.java.foodybiee.country.Country_All_Testcases.GetStates()'><b>GetStates</b><br>Test class: com.java.foodybiee.country.Country_All_Testcases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.country.Country_All_Testcases@44c8afef</td></tr>
+<tr>
+<td title='com.java.foodybiee.country.Country_Negative_Testcases.GetStatesBadRequest()'><b>GetStatesBadRequest</b><br>Test class: com.java.foodybiee.country.Country_Negative_Testcases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.country.Country_Negative_Testcases@7b69c6ba</td></tr>
+<tr>
+<td title='com.java.foodybiee.country.Country_Negative_Testcases.GetStatesNotFound()'><b>GetStatesNotFound</b><br>Test class: com.java.foodybiee.country.Country_Negative_Testcases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.country.Country_Negative_Testcases@7b69c6ba</td></tr>
+<tr>
+<td title='com.java.foodybiee.country.Country_Negative_Testcases.GetStatesUnauthorized()'><b>GetStatesUnauthorized</b><br>Test class: com.java.foodybiee.country.Country_Negative_Testcases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.country.Country_Negative_Testcases@7b69c6ba</td></tr>
+<tr>
+<td title='com.java.foodybiee.franchisee.Franchisee_All_TestCases.GetTopProspectFranchiseList()'><b>GetTopProspectFranchiseList</b><br>Test class: com.java.foodybiee.franchisee.Franchisee_All_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.franchisee.Franchisee_All_TestCases@66d1af89</td></tr>
+<tr>
+<td title='com.java.foodybiee.consumer.Consumer_All_TestCases.GetUpdateAvailableAddress()'><b>GetUpdateAvailableAddress</b><br>Test class: com.java.foodybiee.consumer.Consumer_All_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.consumer.Consumer_All_TestCases@2173f6d9</td></tr>
+<tr>
+<td title='com.java.foodybiee.addtocart.AddToCart_All_TestCases.GetUpdatedCartList()'><b>GetUpdatedCartList</b><br>Test class: com.java.foodybiee.addtocart.AddToCart_All_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.addtocart.AddToCart_All_TestCases@87f383f</td></tr>
+<tr>
+<td title='com.java.foodybiee.consumer.Consumer_All_TestCases.OrderHistory()'><b>OrderHistory</b><br>Test class: com.java.foodybiee.consumer.Consumer_All_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.consumer.Consumer_All_TestCases@2173f6d9</td></tr>
+<tr>
+<td title='com.java.foodybiee.consumer.Consumer_All_Negative_TestCases.OrderHistoryBadRequest()'><b>OrderHistoryBadRequest</b><br>Test class: com.java.foodybiee.consumer.Consumer_All_Negative_TestCases</td>
+<td></td>
+<td>2</td>
+<td>com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c</td></tr>
+<tr>
+<td title='com.java.foodybiee.consumer.Consumer_All_Negative_TestCases.OrderHistoryUnauthorized()'><b>OrderHistoryUnauthorized</b><br>Test class: com.java.foodybiee.consumer.Consumer_All_Negative_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c</td></tr>
+<tr>
+<td title='com.java.foodybiee.consumer.Consumer_All_TestCases.UpdateAvailableAddress()'><b>UpdateAvailableAddress</b><br>Test class: com.java.foodybiee.consumer.Consumer_All_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.consumer.Consumer_All_TestCases@2173f6d9</td></tr>
+<tr>
+<td title='com.java.foodybiee.consumer.Consumer_All_Negative_TestCases.UpdateAvailableAddressBadRequest()'><b>UpdateAvailableAddressBadRequest</b><br>Test class: com.java.foodybiee.consumer.Consumer_All_Negative_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c</td></tr>
+<tr>
+<td title='com.java.foodybiee.consumer.Consumer_All_Negative_TestCases.UpdateAvailableAddressNotFound()'><b>UpdateAvailableAddressNotFound</b><br>Test class: com.java.foodybiee.consumer.Consumer_All_Negative_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c</td></tr>
+<tr>
+<td title='com.java.foodybiee.consumer.Consumer_All_Negative_TestCases.UpdateAvailableAddressUnauthorized()'><b>UpdateAvailableAddressUnauthorized</b><br>Test class: com.java.foodybiee.consumer.Consumer_All_Negative_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.consumer.Consumer_All_Negative_TestCases@307f6b8c</td></tr>
+<tr>
+<td title='com.java.foodybiee.addtocart.AddToCart_All_TestCases.UpdateCart()'><b>UpdateCart</b><br>Test class: com.java.foodybiee.addtocart.AddToCart_All_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.addtocart.AddToCart_All_TestCases@87f383f</td></tr>
+<tr>
+<td title='com.java.foodybiee.addtocart.AddToCart_Negative_TestCases.UpdateCartBadRequest()'><b>UpdateCartBadRequest</b><br>Test class: com.java.foodybiee.addtocart.AddToCart_Negative_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.addtocart.AddToCart_Negative_TestCases@4eb7f003</td></tr>
+<tr>
+<td title='com.java.foodybiee.addtocart.AddToCart_Negative_TestCases.UpdateCartUnauthorized()'><b>UpdateCartUnauthorized</b><br>Test class: com.java.foodybiee.addtocart.AddToCart_Negative_TestCases</td>
+<td></td>
+<td>1</td>
+<td>com.java.foodybiee.addtocart.AddToCart_Negative_TestCases@4eb7f003</td></tr>
+<tr>
+<td title='com.java.foodybiee.chefprofilemobile.ChefProfileMobile.mongodb()'><b>mongodb</b><br>Test class: com.java.foodybiee.chefprofilemobile.ChefProfileMobile</td>
+<td></td>
+<td>3</td>
+<td>com.java.foodybiee.chefprofilemobile.ChefProfileMobile@365185bd</td></tr>
+</table><p>
+</body>
+</html>

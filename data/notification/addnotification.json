@@ -1,0 +1,15 @@
+{
+	"title": "Radhika test",
+	"descrpition": "description test data edit",
+	"showTo": "All chefs",
+	"flag": "Low priority",
+	"userId": "5f93deb94b21edac9f07e7d7",
+	"role": "Franchise",
+	"allChef": true,
+	"allFranchise": true,
+	"startDate": "2021-02-18T10:02:21.610Z",
+	"endDate": "2021-02-18T10:02:21.610Z",
+	"createDate": "2021-02-18T10:02:21.610Z",
+	"isDeleted": true,
+	"isViewed": true
+}

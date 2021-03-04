@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="browser" value=""/>
+  <listeners>
+    <listener class-name="com.java.foodybiee.setup.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="userinfo(failed)">
+    <classes>
+      <class name="com.java.foodybiee.userinfo.UserInfo_Negative_TestCases">
+        <methods>
+          <include name="SetupDriver"/>
+          <include name="GetAllUserInfoNotFound"/>
+        </methods>
+      </class> <!-- com.java.foodybiee.userinfo.UserInfo_Negative_TestCases -->
+    </classes>
+  </test> <!-- userinfo(failed) -->
+  <test thread-count="5" name="notification(failed)">
+    <classes>
+      <class name="com.java.foodybiee.notifications.Notification_All_TestCases">
+        <methods>
+          <include name="GetNotificationByName"/>
+          <include name="DeleteNotificationById"/>
+          <include name="GetUpdatedNotificationById1"/>
+          <include name="GetNotificationById"/>
+          <include name="AddNotification"/>
+          <include name="UpdateNotification"/>
+          <include name="SetupDriver"/>
+          <include name="GetAllNotification"/>
+          <include name="GetNotificationRole"/>
+          <include name="GetDeletedNotificationById1"/>
+        </methods>
+      </class> <!-- com.java.foodybiee.notifications.Notification_All_TestCases -->
+      <class name="com.java.foodybiee.notifications.Notification_All_Negative_TestCases">
+        <methods>
+          <include name="SetupDriver"/>
+          <include name="GetNotificationByIdNotFound"/>
+        </methods>
+      </class> <!-- com.java.foodybiee.notifications.Notification_All_Negative_TestCases -->
+    </classes>
+  </test> <!-- notification(failed) -->
+</suite> <!-- Failed suite [Suite] -->

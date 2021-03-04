@@ -1,0 +1,35 @@
+{
+	"emailId": [
+		"v-vara@alphasource.in"
+	],
+	"name": "varaprasad",
+	"location": "Banasawadi",
+	"lat": "13.0130399",
+	"lng": "77.6261790",
+	"dob": "2021-02-16T09:03:18.142Z",
+	"addressLine1": "228, Ground Floor, 10th C Main Outer Ring Road",
+	"addressLine2": "opp. to State Bank of Travancore, HRBR Layout 1st Block,",
+	"pinCode": "560043",
+	"state": "Karnataka",
+	"country": "India",
+	"phoneNo": [
+		"9573987319"
+	],
+	"profilePic": "string",
+	"roleId": "string",
+	"roleName": "string",
+	"myReferralCode": "string",
+	"referredCode": "string",
+	"isNewUser": true,
+	"createdDate": "2021-02-16T09:03:18.142Z",
+	"status": "Active",
+	"isDeleted": true,
+	"healthInfo": {
+		"height": "string",
+		"weight": "string"
+	},
+	"gender": "Male",
+	"foodPreference": [
+		0
+	]
+}
